@@ -1,0 +1,441 @@
+<style>
+
+*
+    {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+
+body
+    {
+    color: #333;
+    background: #001933;
+    font-family: 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size: 1em;
+    line-height: 160%;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+a h1, a h2, a h3
+    {
+    color: #7F7927;
+    }
+
+.noDecoration
+    {
+    text-decoration: none;
+    }
+
+h1, h2, h3
+    {
+    margin-top: 1.5em;
+    color: #7F7927;
+    }
+
+h1
+    {
+    font-size: 2em;
+    line-height: 110%;
+    }
+
+h2
+    {
+    font-size: 1.6em;
+    }
+
+h3
+    {
+    font-size: 1.3em;
+    }
+
+#wrapper
+    {
+    max-width: 700px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+#content
+    {
+    text-align: left;
+    padding: 0 20px;
+    margin-top: -40px;
+    }
+
+#content h1,
+#content h2
+    {
+    margin-bottom: 10px;
+    }
+
+#content .entry-content
+    {
+    margin-top: 1em;
+    }
+
+#logo
+    {
+ 	position: relative;
+ 	z-index: 200;
+ 	top: 0;
+ 	width: 100px;
+ 	height: 100px;
+    }
+
+p
+    {
+    margin: 1em 0;
+    }
+
+a img
+    {
+    border:none;
+    }
+
+img
+    {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+    }
+
+pre
+    {
+    font-size: 0.8em;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    white-space: normal;
+    }
+
+code.inline
+    {
+    padding: 1px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    }
+
+em,q,em,dfn
+    {
+    font-style: italic;
+    }
+
+strong
+    {
+    font-weight: 600;
+    }
+
+a:link, a:visited
+    {
+	color: #2A5B8A;
+    }
+
+a:active, a:hover
+    {
+	color: #6990B6;
+    }
+
+.sans, html .gist .gist-file .gist-meta
+    {
+    font-family: "Open Sans", "Myriad Pro", Myriad, sans-serif;
+    }
+
+.heading, .serif, h1, h2, h3
+    {
+    font-family: 'Lora', serif;
+    }
+
+table
+    {
+    border: 1px solid #bdb76b;
+    border-collapse: collapse;
+    }
+
+tr
+    {
+    background: #E2DD9F;
+    }
+
+tr:nth-child(even)
+    {
+    background: #bdb76b;
+    }
+
+th, td
+    {
+    padding: 10px;
+    border: 0;
+    text-align: left;
+    }
+
+.menu
+    {
+    position: relative;
+    z-index: 100;
+    top: -70px;
+    width: 100%;
+    height: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    }
+
+.menu ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.menu li
+    {
+    margin: 0 20px;
+    }
+
+.menu a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+#sub-header, time
+    {
+    color: #7F7927;
+    font-size: 0.8em;
+    }
+
+#sub-header
+    {
+    margin: 0 4px;
+    }
+
+ul.posts_listing
+    {
+    list-style: none;
+    }
+
+.moreSpace
+    {
+    padding: 20px 0;
+    }
+
+.signature
+    {
+    padding: 20px 0;
+    }
+
+a.signature
+    {
+    color: #7F7927;
+    }
+
+img
+    {
+    display: inline;
+    float: left;
+    margin-right: 24px;
+    margin-top: 4px;
+    }
+
+.paginationWrapper
+    {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+.paginationWrapper ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.paginationWrapper li
+    {
+    margin: 0 20px;
+    }
+
+.paginationWrapper a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+/*
+LEFT OFF HERE
+
+
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+
+  li {
+    margin-left: 20px;
+  }
+
+
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+*/
+</style>

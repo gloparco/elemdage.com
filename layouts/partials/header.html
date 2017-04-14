@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="{{ .Site.BaseURL }}">
+    {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+      {{ if eq $url "/" }}
+        {{ .Site.Title }}
+      {{ else }}
+        {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+      {{ end }}
+    </title>
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{ partial "styles.html" . }}
+
+    {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <section id="nav">
+            <div id="logo"><a href="/"><img src="/goldLogo.png" alt="" title="Elemdage Logo" width="100" height="100"/></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/" title="Blog Posts">All Posts</a></li>
+                </ul>
+            </div>
+        </section>
