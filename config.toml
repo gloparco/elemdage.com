@@ -2,4 +2,3 @@ baseURL = ""
 languageCode = "en-us"
 title = "Elemdage: Blog by Gene Loparco"
 paginate = 5
-relativeURLs = true
