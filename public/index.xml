@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elemdage: Blog by Gene Loparco</title>
+    <link>/</link>
+    <description>Recent content on Elemdage: Blog by Gene Loparco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Top 20 JavaScript Technologies: March 2017</title>
+      <link>/post/top-20-javascript-technologies/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/top-20-javascript-technologies/</guid>
+      <description>As a follow-up to my previous post, Top 10 Programming Languages, I thought it would be interesting to look at specific technologies in the JavaScript world.
+What&amp;rsquo;s in a Name? The title of this post is a bit misleading, as this analysis includes CSS libraries, such as bootstrap, LESS, and SASS. I was going to call it “Top 20 Full Stack Technologies” but full stack generally includes technologies such as PHP and .</description>
+    </item>
+    
+    <item>
+      <title>Top 10 Programming Languages: March 2017</title>
+      <link>/post/top-10-programming-languages-march-2017/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/top-10-programming-languages-march-2017/</guid>
+      <description>The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017. RSIPL was created after reading several similar articles and lists, most notably, the RedMonk Programming Languages Rankings. The ranking methodology RedMonk uses is based upon popularity of the languages on Github (measuring &amp;ldquo;code&amp;rdquo;, as they put it) and StackOverflow (measuring &amp;ldquo;discussion&amp;rdquo;). As good as this list is, I feel that it is perhaps less timely than it could be, and that it is missing a third critical piece of the puzzle: job postings.</description>
+    </item>
+    
+    <item>
+      <title>About the Author</title>
+      <link>/gloparco/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/gloparco/</guid>
+      <description>Hi there, I am Gene Loparco, a family guy with a tech-consulting day job, and an entrepreneurial itch. I have been working in the IT industry for 25 years now, so I’m really rather old. I have held various titles and have worked for companies ranging from the Fortune 100 to a dot-com bust.
+Right now I am spending most of my time developing apps and games using geeky technologies like JavaScript and Swift.</description>
+    </item>
+    
+    <item>
+      <title>Simple Show/Hide with JS &amp; CSS</title>
+      <link>/post/simple-showhide-with-js-css/</link>
+      <pubDate>Wed, 05 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/simple-showhide-with-js-css/</guid>
+      <description>I am frequently asked by front end developers what the best technique is for showing and hiding a div within a web page. While this can be accomplished many ways, I will outline the technique that I use most often. It involves adding and removing a class from the DOM node you are looking to show or hide. The code shown can be used as a starting point, and can be enhanced once you understand the basics.</description>
+    </item>
+    
+    <item>
+      <title>The 5 Types of Front-End Developers</title>
+      <link>/post/the-5-types-of-front-end-developers/</link>
+      <pubDate>Tue, 31 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-5-types-of-front-end-developers/</guid>
+      <description>I haven’t written anything in a while, so here is a silly post to fill in the time gaps. See if any of these descriptions apply to you or the people you work with, my fellow front-end developer:
+Point and Clickers Point and Clickers are like automobile drivers who don’t have the time, or perhaps the inclination, to change oil or even look under the hood for anything but adding washer fluid.</description>
+    </item>
+    
+    <item>
+      <title>Navigating the HTML5 Maze</title>
+      <link>/post/navigating-the-html5-maze/</link>
+      <pubDate>Tue, 29 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/navigating-the-html5-maze/</guid>
+      <description>Ember! Batman! Spine! Knockout! Bootstrap! Boilerplate! No, this is not the opening sequence to a bad B-list movie from the 1960&#39;s. It is but a very small sampling of the overwhelming number of HTML5 libraries/frameworks/(insert your own catagorization here) available for use by unsuspecting, bright-eyed developers. [Note: remember, when I use the term HTML5, it is based on what seems to be the industry accepted use of the term which encompasses HTML5, JavaScript, and CSS3] Selecting one or more open source projects to make your development life easier usually ends up being a project in and of itself.</description>
+    </item>
+    
+    <item>
+      <title>One Man&#39;s HTML5 Developer Workflow</title>
+      <link>/post/one-mans-html5-developer-workflow/</link>
+      <pubDate>Thu, 19 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/one-mans-html5-developer-workflow/</guid>
+      <description>We are now squarely in the age of HTML5; or the age of HTML5, JavaScript, and CSS3, if you prefer. That being the case, it amazes me that for those poor souls who are new to the world of front-end development, there is little written on what their developer workflow might look like. With them in mind, I am offering up a starting point, based on my own experience and preferences.</description>
+    </item>
+    
+    <item>
+      <title>The Myth of WORA</title>
+      <link>/post/the-myth-of-wora/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-myth-of-wora/</guid>
+      <description>For years, businesses have searched for the holy grail of the development world - the notion of being able to write a program, application, app, or whatever they&amp;rsquo;re now calling it, just once, while being able to deploy it on any number of systems. Hence the term &amp;ldquo;Write Once Run Anywhere&amp;rdquo;, a.k.a. WORA.
+This notion really started to gain traction, or at least publicity, in the mid-90&amp;rsquo;s when Java took the business world by storm.</description>
+    </item>
+    
+    <item>
+      <title>HTML5: Is it Ready for Prime Time?</title>
+      <link>/post/html5-is-it-ready-for-prime-time/</link>
+      <pubDate>Tue, 25 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/post/html5-is-it-ready-for-prime-time/</guid>
+      <description>The recent announcement by Apple that it has sold over one million iPads in just 28 days has developers chomping at the bit to create apps for the iPhone OS. However, for many of these App Store success story hopefuls, there are at least two problems that they face before writing even a single line of code.
+If one would like to develop a native app for the iPhone OS, they must either take a time machine back to 1988 and learn the nasty, archaic language known as Objective-C, or they must take a leap of faith and hope that Apple’s recent Developer Agreement changes don’t apply to Adobe and other vendors offering tools that translate various languages into native iPhone code.</description>
+    </item>
+    
+  </channel>
+</rss>

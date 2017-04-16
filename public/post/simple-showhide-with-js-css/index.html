@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         Simple Show/Hide with JS &amp; CSS 
+      
+    </title>
+    <link rel="canonical" href="/post/simple-showhide-with-js-css/">
+
+    <style>
+
+*
+    {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+
+body
+    {
+    color: #333;
+    background: #001933;
+    font-family: 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size: 1em;
+    line-height: 160%;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+a h1, a h2, a h3
+    {
+    color: #7F7927;
+    }
+
+.noDecoration
+    {
+    text-decoration: none;
+    }
+
+h1, h2, h3
+    {
+    margin-top: 1.5em;
+    line-height: 120%;
+    color: #7F7927;
+    }
+
+h1
+    {
+    font-size: 2em;
+    }
+
+h2
+    {
+    font-size: 1.6em;
+    }
+
+h3
+    {
+    font-size: 1.3em;
+    }
+
+#wrapper
+    {
+    width: 700px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+#content
+    {
+    text-align: left;
+    padding: 0 20px;
+    margin-top: -40px;
+    }
+
+#content h1,
+#content h2
+    {
+    margin-bottom: 10px;
+    }
+
+#content .entry-content
+    {
+    margin-top: 1em;
+    }
+
+#logo
+    {
+ 	position: relative;
+ 	z-index: 200;
+ 	top: 0;
+ 	width: 100px;
+ 	height: 100px;
+    }
+
+p
+    {
+    margin: 1em 0;
+    }
+
+a img
+    {
+    border:none;
+    }
+
+img
+    {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+    }
+
+pre
+    {
+    font-size: 0.8em;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    white-space: normal;
+    }
+
+code.inline
+    {
+    padding: 1px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    }
+
+em,q,em,dfn
+    {
+    font-style: italic;
+    }
+
+strong
+    {
+    font-weight: 600;
+    }
+
+a:link, a:visited
+    {
+	color: #2A5B8A;
+    }
+
+a:active, a:hover
+    {
+	color: #6990B6;
+    }
+
+.sans, html .gist .gist-file .gist-meta
+    {
+    font-family: "Open Sans", "Myriad Pro", Myriad, sans-serif;
+    }
+
+.heading, .serif, h1, h2, h3
+    {
+    font-family: 'Lora', serif;
+    }
+
+table
+    {
+    border: 1px solid #bdb76b;
+    border-collapse: collapse;
+    }
+
+tr
+    {
+    background: #E2DD9F;
+    }
+
+tr:nth-child(even)
+    {
+    background: #bdb76b;
+    }
+
+th, td
+    {
+    padding: 10px;
+    border: 0;
+    text-align: left;
+    }
+
+.menu
+    {
+    position: relative;
+    z-index: 100;
+    top: -70px;
+    width: 100%;
+    height: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    }
+
+.menu ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.menu li
+    {
+    margin: 0 20px;
+    }
+
+.menu a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+#sub-header, time
+    {
+    color: #7F7927;
+    font-size: 0.8em;
+    }
+
+#sub-header
+    {
+    margin: 0 4px;
+    }
+
+ul.posts_listing
+    {
+    list-style: none;
+    }
+
+.moreSpace
+    {
+    padding: 20px 0;
+    }
+
+.signature
+    {
+    padding: 20px 0;
+    }
+
+a.signature
+    {
+    color: #7F7927;
+    }
+
+img
+    {
+    display: inline;
+    float: left;
+    margin-right: 24px;
+    margin-top: 4px;
+    }
+
+.paginationWrapper
+    {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+.paginationWrapper ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.paginationWrapper li
+    {
+    margin: 0 20px;
+    }
+
+.paginationWrapper a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+ 
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <section id="nav">
+            <div id="logo"><a href="/"><img src="/goldLogo.png" alt="" title="Elemdage Logo" width="100" height="100"/></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/" title="Blog Posts">All Posts</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+<section id=content>
+  <h1> Simple Show/Hide with JS &amp; CSS </h1>
+
+  <div id=sub-header>
+    March 2014 · 4 minute read
+  </div>
+
+  <div class=entry-content>
+    
+
+<p><img src="/js.jpg" alt="JS Logo" /> I am frequently asked by front end developers what the best technique is for showing and hiding a div within a web page.  While this can be accomplished many ways, I will outline the technique that I use most often.  It involves adding and removing a class from the DOM node you are looking to show or hide.  The code shown can be used as a starting point, and can be enhanced once you understand the basics.</p>
+
+<p>Note: if you would like to skip the tutorial and jump right to the code, head on over to <a href="https://github.com/gloparco/ShowHide">github</a>.  If you want to see the code in action, you can try it out <a href="http://elemdage.com/ShowHide">here</a>.  The demo will run on mobile devices as well, but be aware that I haven&rsquo;t bothered removing the <a href="http://updates.html5rocks.com/2013/12/300ms-tap-delay-gone-away">300ms delay</a>.</p>
+
+<p>Now on to the tutorial&hellip;</p>
+
+<h2 id="step-1-the-html">Step 1: the HTML</h2>
+
+<p>First, you will need to set up your tags properly.  We will set up two div&rsquo;s of note: a div that acts as a toggle button, and a toggle-able content area:</p>
+
+<p><div data-height="220" data-theme-id="8299" data-slug-hash="LcIKJ" data-default-tab="html" data-user="gloparco" class='codepen'><pre><code>&lt;div id=&quot;mainContent&quot; class=&quot;mainContent&quot;&gt;
+  &lt;h1&gt;Easy Show/Hide Using CSS&lt;/h1&gt;
+  &lt;div id=&quot;toggleButton&quot; class=&quot;toggleButton&quot;&gt;Show Content&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;toggledContent&quot; class=&quot;toggledContent hide&quot;&gt;This cotent area can contain anything - usually it is a menu of some sort.&lt;br&gt;&lt;br&gt;The technique used involves adding or removing a class from the node you are looking to hide or show, respectively.&lt;/div&gt;</code></pre>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+
+<p>Observe the toggledContent tag includes a &ldquo;hide&rdquo; class.  This is necessary since we would like the default state of the div to be hidden.</p>
+
+<h2 id="step-2-the-css">Step 2: the CSS</h2>
+
+<p>Next, you will need to define the classes.  Although tangential to this post, you will notice that I subscribe to the notion of never using ID&rsquo;s to style the code, even if there is only one ID using a single class.  You can read more about it <a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/">here</a> and <a href="http://css-tricks.com/a-line-in-the-sand/">here</a>.</p>
+
+<p><div data-height="414" data-theme-id="8299" data-slug-hash="LcIKJ" data-default-tab="css" data-user="gloparco" class='codepen'><pre><code>body
+    {
+    background: #fff;
+    font-family: OpenSans;
+    }</p>
+
+<p>h1
+    {
+    padding: 0;
+    margin: 20px 0;
+    font-size: 20px;
+    color: #090;
+    }</p>
+
+<p>.mainContent
+    {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 480px;
+    background: #fff;
+    text-align: center;
+    }</p>
+
+<p>.toggleButton
+    {
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    background: #090;
+    color: #fff;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    }</p>
+
+<p>.toggledContent
+    {
+    position: absolute;
+    z-index: 999;
+    top: 150px;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    margin-left: -3px;
+    padding: 10px;
+    background: #257;
+    color: rgba(255, 255, 255, 0.9);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 20px 20px 0;
+    -webkit-transform: translateX(0);
+    -webkit-transition: all .3s ease;
+    }</p>
+
+<p>.toggledContent.hide
+    {
+    -webkit-transform: translateX(-100%);
+    }</code></pre>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+
+<p>The important bits of this code can be seen when you scroll down to the bottom.  You will see <code class="inline">.toggledContent</code>, which contains styling as well as animation properties, transform and transition.  The transform, in this case, is used to set the position of the div when it is NOT hidden (i.e., when the <code class="inline">.hide</code> class is removed from the tag - more about this, later).  The transition is used to direct the browser which transforms are to be transitioned (in this case, &lsquo;all&rsquo;), how long the transition should last (in this case, &lsquo;300 milliseconds&rsquo;), and how to transition (in this case, &lsquo;ease&rsquo; - for more elaborate values, check out the nifty online tool <a href="http://matthewlein.com/ceaser/">Ceaser</a>.  Likewise, the more specific <code class="inline">.toggledContent.hide</code> contains its own transform property.  Its purpose is to shift the toggledContent div along the x-axis by -100%.  Since the starting x coordinate is 0, as defined in the &ldquo;left&rdquo; property of the <code class="inline">.toggledContent</code> class, the transform will effectively shift the content out of the viewport.</p>
+
+<h2 id="step-3-the-javascript">Step 3: the JavaScript</h2>
+
+<p>Tying everything together, per usual, is your JavaScript code.  The idea here is for your toggleButton div to listen for when the <code class="inline">onclick</code> event is fired, the result of which is to show or hide the toggledContent div.</p>
+
+<p><div data-height="700" data-theme-id="8299" data-slug-hash="LcIKJ" data-default-tab="js" data-user="gloparco" class='codepen'><pre><code>var contentHidden = true,
+    $toggleButton = document.getElementById(&#39;toggleButton&#39;),
+    $toggledContent = document.getElementById(&#39;toggledContent&#39;);
+    // equivalent jQuery code:
+    // $toggleButton = $(&#39;#toggleButton&#39;);
+    // $toggledContent = $(&#39;#toggledContent&#39;);</p>
+
+<p>// jQuery equivalent: $toggledButton.click()
+$toggleButton.onclick = function()
+    {
+    showHideContent();
+    }</p>
+
+<p>function showHideContent()
+    {
+    if (contentHidden)
+        {
+        contentHidden = false;
+        $toggledContent.className = &quot;toggledContent&quot;;
+        // equivalent jQuery code:
+        // $toggledContent.removeClass(&#39;hide&#39;);
+        }
+    else
+        {
+        contentHidden = true;
+        $toggledContent.className = &quot;toggledContent hide&quot;;
+        // equivalent jQuery code:
+        // $toggledContent.addClass(&#39;hide&#39;)
+        }
+    }</code></pre>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+
+<p>Here, you will notice a function called <code class="inline">showHideContent</code>.  This function simply toggles the state of the toggledContent div.  It accomplishes this by adding or removing the <code class="inline">hide</code> class from the div tag.  The effect of doing so is to trigger the transform contained in the default <code class="inline">.toggledContent</code> class or the transform contained in the <code class="inline">.toggledContent.hide</code> CSS code.</p>
+
+<h2 id="putting-it-all-together">Putting it All Together</h2>
+
+<p>The UI consists of a header, a single button, and an initially hidden content area.  The button, when clicked, will toggle the state of a content area.  If it&rsquo;s hidden, it will show it.  If it&rsquo;s being shown, it will hide it.  Pretty simple, eh?</p>
+
+<p><p data-height="530" data-theme-id="8299" data-slug-hash="LcIKJ" data-default-tab="result" data-user="gloparco" class='codepen'>See the Pen <a href='http://codepen.io/gloparco/pen/LcIKJ/'>Easy Show/Hide Using CSS &amp; JS</a> by Gene Loparco (<a href='http://codepen.io/gloparco'>@gloparco</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script></p>
+
+<p>Feel free to comment on this technique or to post your own techniques for accomplishing the same thing.</p>
+
+  </div>
+
+</section>
+
+    <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
+  </div>
+</body>
+</html>
+

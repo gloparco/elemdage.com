@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.20" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+        Elemdage: Blog by Gene Loparco
+      
+    </title>
+    <link rel="canonical" href="/">
+
+    <style>
+
+*
+    {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+
+body
+    {
+    color: #333;
+    background: #001933;
+    font-family: 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size: 1em;
+    line-height: 160%;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+a h1, a h2, a h3
+    {
+    color: #7F7927;
+    }
+
+.noDecoration
+    {
+    text-decoration: none;
+    }
+
+h1, h2, h3
+    {
+    margin-top: 1.5em;
+    line-height: 120%;
+    color: #7F7927;
+    }
+
+h1
+    {
+    font-size: 2em;
+    }
+
+h2
+    {
+    font-size: 1.6em;
+    }
+
+h3
+    {
+    font-size: 1.3em;
+    }
+
+#wrapper
+    {
+    width: 700px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+#content
+    {
+    text-align: left;
+    padding: 0 20px;
+    margin-top: -40px;
+    }
+
+#content h1,
+#content h2
+    {
+    margin-bottom: 10px;
+    }
+
+#content .entry-content
+    {
+    margin-top: 1em;
+    }
+
+#logo
+    {
+ 	position: relative;
+ 	z-index: 200;
+ 	top: 0;
+ 	width: 100px;
+ 	height: 100px;
+    }
+
+p
+    {
+    margin: 1em 0;
+    }
+
+a img
+    {
+    border:none;
+    }
+
+img
+    {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+    }
+
+pre
+    {
+    font-size: 0.8em;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    white-space: normal;
+    }
+
+code.inline
+    {
+    padding: 1px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    }
+
+em,q,em,dfn
+    {
+    font-style: italic;
+    }
+
+strong
+    {
+    font-weight: 600;
+    }
+
+a:link, a:visited
+    {
+	color: #2A5B8A;
+    }
+
+a:active, a:hover
+    {
+	color: #6990B6;
+    }
+
+.sans, html .gist .gist-file .gist-meta
+    {
+    font-family: "Open Sans", "Myriad Pro", Myriad, sans-serif;
+    }
+
+.heading, .serif, h1, h2, h3
+    {
+    font-family: 'Lora', serif;
+    }
+
+table
+    {
+    border: 1px solid #bdb76b;
+    border-collapse: collapse;
+    }
+
+tr
+    {
+    background: #E2DD9F;
+    }
+
+tr:nth-child(even)
+    {
+    background: #bdb76b;
+    }
+
+th, td
+    {
+    padding: 10px;
+    border: 0;
+    text-align: left;
+    }
+
+.menu
+    {
+    position: relative;
+    z-index: 100;
+    top: -70px;
+    width: 100%;
+    height: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    }
+
+.menu ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.menu li
+    {
+    margin: 0 20px;
+    }
+
+.menu a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+#sub-header, time
+    {
+    color: #7F7927;
+    font-size: 0.8em;
+    }
+
+#sub-header
+    {
+    margin: 0 4px;
+    }
+
+ul.posts_listing
+    {
+    list-style: none;
+    }
+
+.moreSpace
+    {
+    padding: 20px 0;
+    }
+
+.signature
+    {
+    padding: 20px 0;
+    }
+
+a.signature
+    {
+    color: #7F7927;
+    }
+
+img
+    {
+    display: inline;
+    float: left;
+    margin-right: 24px;
+    margin-top: 4px;
+    }
+
+.paginationWrapper
+    {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+.paginationWrapper ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.paginationWrapper li
+    {
+    margin: 0 20px;
+    }
+
+.paginationWrapper a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+ 
+</style>
+
+
+    
+      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Elemdage: Blog by Gene Loparco" />
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <section id="nav">
+            <div id="logo"><a href="/"><img src="/goldLogo.png" alt="" title="Elemdage Logo" width="100" height="100"/></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/" title="Blog Posts">All Posts</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+<section id=content>
+  <ul class=posts_listing>
+    
+      <li><a class="noDecoration" href="/post/top-20-javascript-technologies/"><h2>Top 20 JavaScript Technologies: March 2017</h2></a>
+        <div id=date>
+          <time>March 2017</time>
+        </div>
+        <div id=summary>
+            As a follow-up to my previous post, Top 10 Programming Languages, I thought it would be interesting to look at specific technologies in the JavaScript world.
+What&rsquo;s in a Name? The title of this post is a bit misleading, as this analysis includes CSS libraries, such as bootstrap, LESS, and SASS. I was going to call it “Top 20 Full Stack Technologies” but full stack generally includes technologies such as PHP and .
+            <p><a href="/post/top-20-javascript-technologies/">Read the Full Post</a></p>
+        </div>
+      </li>
+    
+      <li><a class="noDecoration" href="/post/top-10-programming-languages-march-2017/"><h2>Top 10 Programming Languages: March 2017</h2></a>
+        <div id=date>
+          <time>March 2017</time>
+        </div>
+        <div id=summary>
+            The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017. RSIPL was created after reading several similar articles and lists, most notably, the RedMonk Programming Languages Rankings. The ranking methodology RedMonk uses is based upon popularity of the languages on Github (measuring &ldquo;code&rdquo;, as they put it) and StackOverflow (measuring &ldquo;discussion&rdquo;). As good as this list is, I feel that it is perhaps less timely than it could be, and that it is missing a third critical piece of the puzzle: job postings.
+            <p><a href="/post/top-10-programming-languages-march-2017/">Read the Full Post</a></p>
+        </div>
+      </li>
+    
+      <li><a class="noDecoration" href="/post/simple-showhide-with-js-css/"><h2>Simple Show/Hide with JS &amp; CSS</h2></a>
+        <div id=date>
+          <time>March 2014</time>
+        </div>
+        <div id=summary>
+            I am frequently asked by front end developers what the best technique is for showing and hiding a div within a web page. While this can be accomplished many ways, I will outline the technique that I use most often. It involves adding and removing a class from the DOM node you are looking to show or hide. The code shown can be used as a starting point, and can be enhanced once you understand the basics.
+            <p><a href="/post/simple-showhide-with-js-css/">Read the Full Post</a></p>
+        </div>
+      </li>
+    
+      <li><a class="noDecoration" href="/post/the-5-types-of-front-end-developers/"><h2>The 5 Types of Front-End Developers</h2></a>
+        <div id=date>
+          <time>July 2012</time>
+        </div>
+        <div id=summary>
+            I haven’t written anything in a while, so here is a silly post to fill in the time gaps. See if any of these descriptions apply to you or the people you work with, my fellow front-end developer:
+Point and Clickers Point and Clickers are like automobile drivers who don’t have the time, or perhaps the inclination, to change oil or even look under the hood for anything but adding washer fluid.
+            <p><a href="/post/the-5-types-of-front-end-developers/">Read the Full Post</a></p>
+        </div>
+      </li>
+    
+  </ul>
+</section>
+
+<div class=paginationWrapper>
+    <ul>
+    
+        <li><a href="/page/2/">&larr; Older Posts</a></li>
+    
+    
+    </ul>
+</div>
+    <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
+  </div>
+</body>
+</html>
+

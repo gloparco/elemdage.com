@@ -38,3 +38,33 @@ As you can see, rather than just list the top 10, I have shown their scores, so 
 While I feel RSIPL does a better job at capturing current popularity of programming languages than other lists, it is far from perfect.  Although job postings do add a meaningful aspect to the analysis, it is somewhat flawed, because job postings tend to lag behind the latest and greatest trends, as industry is typically slow to respond to change.  In addition, there will always be jobs related to corporate legacy systems that will also skew such ratings.  But to counter that argument, even though there are jobs available for legacy technology, they are still jobs nonetheless, and they still do reflect on the popularity of a given language (so COBOL programmers take heart!).
 
 I intend on posting RISPL ratings over time, perhaps monthly.  I also intend to revise the index as better data becomes available.  Hopefully it is helpful to some in its current form.
+
+---
+
+### **Reader Comments**
+
+**Satish Venkatesan**  
+*March 18, 2017*
+
+Good one Gene. It will be nice to see how your index compares with other similar indices over a period of time.
+
+**Gene's reply**
+
+I agree – I’m looking forward to seeing how this list trends from here.
+
+<div class="commentSeparator">~~~</div>
+
+**Volkan Ozcelik**
+*March 22, 2017*
+
+Nice post Gene.
+
+JavaScript will be a strong language for the next five years at least.
+
+And Java is the obvious workhorse when you don’t care launching a hovercraft just to get to the building next door.
+
+Nonetheless, Java will always be in the enterprise software arsenal.
+
+For swift I adhere to the crazy-hot litmus test (i.e. a girl is allowed to be crazy as long as she is equally hot) — I have same feelings for Go too, though it is less crazy and arguably less hot it is a solid language for certain set of tasks.
+
+It would be nice to see how things change over time.

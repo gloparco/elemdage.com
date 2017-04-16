@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         The 5 Types of Front-End Developers 
+      
+    </title>
+    <link rel="canonical" href="/post/the-5-types-of-front-end-developers/">
+
+    <style>
+
+*
+    {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+
+body
+    {
+    color: #333;
+    background: #001933;
+    font-family: 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size: 1em;
+    line-height: 160%;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+a h1, a h2, a h3
+    {
+    color: #7F7927;
+    }
+
+.noDecoration
+    {
+    text-decoration: none;
+    }
+
+h1, h2, h3
+    {
+    margin-top: 1.5em;
+    line-height: 120%;
+    color: #7F7927;
+    }
+
+h1
+    {
+    font-size: 2em;
+    }
+
+h2
+    {
+    font-size: 1.6em;
+    }
+
+h3
+    {
+    font-size: 1.3em;
+    }
+
+#wrapper
+    {
+    width: 700px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+#content
+    {
+    text-align: left;
+    padding: 0 20px;
+    margin-top: -40px;
+    }
+
+#content h1,
+#content h2
+    {
+    margin-bottom: 10px;
+    }
+
+#content .entry-content
+    {
+    margin-top: 1em;
+    }
+
+#logo
+    {
+ 	position: relative;
+ 	z-index: 200;
+ 	top: 0;
+ 	width: 100px;
+ 	height: 100px;
+    }
+
+p
+    {
+    margin: 1em 0;
+    }
+
+a img
+    {
+    border:none;
+    }
+
+img
+    {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+    }
+
+pre
+    {
+    font-size: 0.8em;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    white-space: normal;
+    }
+
+code.inline
+    {
+    padding: 1px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    }
+
+em,q,em,dfn
+    {
+    font-style: italic;
+    }
+
+strong
+    {
+    font-weight: 600;
+    }
+
+a:link, a:visited
+    {
+	color: #2A5B8A;
+    }
+
+a:active, a:hover
+    {
+	color: #6990B6;
+    }
+
+.sans, html .gist .gist-file .gist-meta
+    {
+    font-family: "Open Sans", "Myriad Pro", Myriad, sans-serif;
+    }
+
+.heading, .serif, h1, h2, h3
+    {
+    font-family: 'Lora', serif;
+    }
+
+table
+    {
+    border: 1px solid #bdb76b;
+    border-collapse: collapse;
+    }
+
+tr
+    {
+    background: #E2DD9F;
+    }
+
+tr:nth-child(even)
+    {
+    background: #bdb76b;
+    }
+
+th, td
+    {
+    padding: 10px;
+    border: 0;
+    text-align: left;
+    }
+
+.menu
+    {
+    position: relative;
+    z-index: 100;
+    top: -70px;
+    width: 100%;
+    height: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    }
+
+.menu ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.menu li
+    {
+    margin: 0 20px;
+    }
+
+.menu a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+#sub-header, time
+    {
+    color: #7F7927;
+    font-size: 0.8em;
+    }
+
+#sub-header
+    {
+    margin: 0 4px;
+    }
+
+ul.posts_listing
+    {
+    list-style: none;
+    }
+
+.moreSpace
+    {
+    padding: 20px 0;
+    }
+
+.signature
+    {
+    padding: 20px 0;
+    }
+
+a.signature
+    {
+    color: #7F7927;
+    }
+
+img
+    {
+    display: inline;
+    float: left;
+    margin-right: 24px;
+    margin-top: 4px;
+    }
+
+.paginationWrapper
+    {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+.paginationWrapper ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.paginationWrapper li
+    {
+    margin: 0 20px;
+    }
+
+.paginationWrapper a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+ 
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <section id="nav">
+            <div id="logo"><a href="/"><img src="/goldLogo.png" alt="" title="Elemdage Logo" width="100" height="100"/></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/" title="Blog Posts">All Posts</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+<section id=content>
+  <h1> The 5 Types of Front-End Developers </h1>
+
+  <div id=sub-header>
+    July 2012 · 3 minute read
+  </div>
+
+  <div class=entry-content>
+    
+
+<p>I haven’t written anything in a while, so here is a silly post to fill in the time gaps.  See if any of these descriptions apply to you or the people you work with, my fellow front-end developer:</p>
+
+<h2 id="point-and-clickers">Point and Clickers</h2>
+
+<p>Point and Clickers are like automobile drivers who don’t have the time, or perhaps the inclination, to change oil or even look under the hood for anything but adding washer fluid.  As such, these developers rarely work with HTML, JavaScript, or CSS.  Instead, they typically rely on code generating tools, such as Dreamweaver to do the dirty work for them.</p>
+
+<p>There’s something to be said for their pragmatism, and, besides, one must start somewhere, mustn’t one?</p>
+
+<p>Point and Clickers might create a website, but certainly not a web app.  And they usually work alone.</p>
+
+<h2 id="w3schoolers">W3Schoolers</h2>
+
+<p>W3Schoolers want to know more about what goes on under the covers.  They are a curious bunch and are well adept at googling for whatever information they need to get a job done.  For better or worse, they get most of their information from, well, I won’t even say it or people might stop reading this article (suffice to say, it’s not the most popular site amongst those “in the know”).  They lack a thorough understanding of what they’re coding and why it works, instead relying on snippets of code found in various blog posts and tutorials.</p>
+
+<p>W3Schoolers often learn of the need for separation of JavaScript and CSS into separate files, but might not understand the nuances of optimized code (e.g., where to place script tags), or the value of compressing or minifying files.</p>
+
+<p>W3Schoolers typically work alone, or with very small teams (2 or 3 people max).  They almost certainly create websites and not web apps.</p>
+
+<h2 id="cobblers">Cobblers</h2>
+
+<p>Cobblers are developers who have typically been using web technologies for a number of years.  They understand what a DOM is, how to program asynchronously, and most importantly, how to integrate different libraries together.  They know all about gzipping, minification, and separation of concerns.  They are typically experts in using JavaScript libraries or frameworks, especially jQuery.  But they miss bigger picture things like Architecture, reuse, maintenance, and deployment pragmatism.</p>
+
+<p>Cobblers typically work in small teams and are fully capable of developing websites and web apps.</p>
+
+<h2 id="architects">Architects</h2>
+
+<p>Architects are former Cobblers who have graduated to the level of “expert”.  They are really good at looking at a problem, considering all possible tools, frameworks, libraries, custom code, etc needed for a solution, and coming up with a completely over-engineered solution. 😉</p>
+
+<p>Architects typically work on large projects with large teams for a large sum.  These projects are becoming more and more about web apps, rather than websites.  And more recently, they’re becoming just as much about smart phones and tablets as they are about desktops.</p>
+
+<p>Architects can get their hands dirty, but prefer not to, relying instead on a team of Cobblers to do their bidding.</p>
+
+<h2 id="gurus">Gurus</h2>
+
+<p>These are the Matteo Spinelli’s (of <a href="http://cubiq.org/iscroll">iScroll</a> fame) and Thomas Fuch’s (of <a href="http://zeptojs.com/">zepto</a> fame) of the world.  Very few of them have actually been spotted in the wild.  These guys know closures and prototypes like the backs of their hands, and scoff at frameworks in general, opting instead to create their own.  If you want to hire them to work for you, forget it, they will laugh at the notion.  They have bigger and better things to do.  They care about things like semi-colons and vendor prefixes, since they have mastered all that is more difficult.  [note: these characterizations are for Gurus in general and not Matteo or Thomas, who are really great guys 😀]</p>
+
+<p>Gurus, of course, work for no one but themselves!</p>
+
+<p><strong>So which type of front end developer are you?</strong></p>
+
+  </div>
+
+</section>
+
+    <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
+  </div>
+</body>
+</html>
+

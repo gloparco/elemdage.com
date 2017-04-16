@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         HTML5: Is it Ready for Prime Time? 
+      
+    </title>
+    <link rel="canonical" href="/post/html5-is-it-ready-for-prime-time/">
+
+    <style>
+
+*
+    {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+
+body
+    {
+    color: #333;
+    background: #001933;
+    font-family: 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size: 1em;
+    line-height: 160%;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+a h1, a h2, a h3
+    {
+    color: #7F7927;
+    }
+
+.noDecoration
+    {
+    text-decoration: none;
+    }
+
+h1, h2, h3
+    {
+    margin-top: 1.5em;
+    line-height: 120%;
+    color: #7F7927;
+    }
+
+h1
+    {
+    font-size: 2em;
+    }
+
+h2
+    {
+    font-size: 1.6em;
+    }
+
+h3
+    {
+    font-size: 1.3em;
+    }
+
+#wrapper
+    {
+    width: 700px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+#content
+    {
+    text-align: left;
+    padding: 0 20px;
+    margin-top: -40px;
+    }
+
+#content h1,
+#content h2
+    {
+    margin-bottom: 10px;
+    }
+
+#content .entry-content
+    {
+    margin-top: 1em;
+    }
+
+#logo
+    {
+ 	position: relative;
+ 	z-index: 200;
+ 	top: 0;
+ 	width: 100px;
+ 	height: 100px;
+    }
+
+p
+    {
+    margin: 1em 0;
+    }
+
+a img
+    {
+    border:none;
+    }
+
+img
+    {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+    }
+
+pre
+    {
+    font-size: 0.8em;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    white-space: normal;
+    }
+
+code.inline
+    {
+    padding: 1px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    }
+
+em,q,em,dfn
+    {
+    font-style: italic;
+    }
+
+strong
+    {
+    font-weight: 600;
+    }
+
+a:link, a:visited
+    {
+	color: #2A5B8A;
+    }
+
+a:active, a:hover
+    {
+	color: #6990B6;
+    }
+
+.sans, html .gist .gist-file .gist-meta
+    {
+    font-family: "Open Sans", "Myriad Pro", Myriad, sans-serif;
+    }
+
+.heading, .serif, h1, h2, h3
+    {
+    font-family: 'Lora', serif;
+    }
+
+table
+    {
+    border: 1px solid #bdb76b;
+    border-collapse: collapse;
+    }
+
+tr
+    {
+    background: #E2DD9F;
+    }
+
+tr:nth-child(even)
+    {
+    background: #bdb76b;
+    }
+
+th, td
+    {
+    padding: 10px;
+    border: 0;
+    text-align: left;
+    }
+
+.menu
+    {
+    position: relative;
+    z-index: 100;
+    top: -70px;
+    width: 100%;
+    height: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    }
+
+.menu ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.menu li
+    {
+    margin: 0 20px;
+    }
+
+.menu a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+#sub-header, time
+    {
+    color: #7F7927;
+    font-size: 0.8em;
+    }
+
+#sub-header
+    {
+    margin: 0 4px;
+    }
+
+ul.posts_listing
+    {
+    list-style: none;
+    }
+
+.moreSpace
+    {
+    padding: 20px 0;
+    }
+
+.signature
+    {
+    padding: 20px 0;
+    }
+
+a.signature
+    {
+    color: #7F7927;
+    }
+
+img
+    {
+    display: inline;
+    float: left;
+    margin-right: 24px;
+    margin-top: 4px;
+    }
+
+.paginationWrapper
+    {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+.paginationWrapper ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.paginationWrapper li
+    {
+    margin: 0 20px;
+    }
+
+.paginationWrapper a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+ 
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <section id="nav">
+            <div id="logo"><a href="/"><img src="/goldLogo.png" alt="" title="Elemdage Logo" width="100" height="100"/></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/" title="Blog Posts">All Posts</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+<section id=content>
+  <h1> HTML5: Is it Ready for Prime Time? </h1>
+
+  <div id=sub-header>
+    May 2010 · 5 minute read
+  </div>
+
+  <div class=entry-content>
+    
+
+<p>The recent announcement by Apple that it has sold over <a href="http://www.apple.com/pr/library/2010/05/03ipad.html">one million iPads in just 28 days</a> has developers chomping at the bit to create apps for the iPhone OS.  However, for many of these App Store success story hopefuls, there are at least two problems that they face before writing even a single line of code.</p>
+
+<p>If one would like to develop a native app for the iPhone OS, they must either take a time machine back to 1988 and learn the nasty, archaic language known as Objective-C, or they must take a leap of faith and hope that Apple’s recent <a href="http://blogs.zdnet.com/Burnette/?p=1904">Developer Agreement changes</a> don’t apply to Adobe and other vendors offering tools that translate various languages into native iPhone code.</p>
+
+<p>If instead, one would like to develop a more portable app, designed to run on most any device, there is one technology that has produced more buzz than a hummingbird on steroids.</p>
+
+<p>Enter HTML5, the apparent panacea of the software industry.  Is it supported by iPhones and iPads?  Check!  What about Android?  Yup!  And those old clunky things we still use at our desks and lug around in our travel bags, what are they called again?  Oh yeah, computers – do they support HTML5 apps?  They sure do!</p>
+
+<p>So, then problem solved, right?</p>
+
+<p>Well, not so fast.  As nice as it would be to code an app that can be run on any platform, there are some things to consider before drinking the HTML5 Kool-Aid.</p>
+
+<h2 id="are-we-done-yet">Are we done yet?</h2>
+
+<p>The <a href="http://dev.w3.org/html5/spec/Overview.html">HTML5 specification</a> is, hmm how shall I put this… still in its suggestion phase, otherwise known as a “working draft” by the W3C, the braintrust behind the spec.  The authors, in the third paragraph of the most recent draft, even go so far as to state “Implementors should be aware that this specification is not stable.”  Really?  And developers are still expected to get excited about using HTML5 in professional, production-ready apps?</p>
+
+<h2 id="get-me-out-of-this-thing">Get me out of this thing!</h2>
+
+<p>HTML5 is still bound to the browser, and as such is somewhat restricted in what it can do.  In addition, developers are at the mercy of the browser vendors, who get to decide which aspects of the HTML specification will be supported and which will be left out.  Most good browser vendors are ahead of the curve, supporting much of the spec already, and planning to support many more features in time.  Others seem to be more reluctant and slow moving with their adoption (yes, I’m talking about you, Microsoft).</p>
+
+<p>So as a result, HTML5 developers are forced to either scale back their usage of certain features, taking a “least common denominator” approach, or throw caution to the wind and just hope that browser vendors will start adopting new features more rapidly (don’t hold your breath).</p>
+
+<h2 id="it-s-déjà-vu-all-over-again">It’s Déjà vu all over again</h2>
+
+<p>Being tied to the browser also causes another headache for developers (a headache that javascript/css developers should be intimately familiar with) – inconsistent rendering.  You can be guaranteed that the app you’ve meticulously developed for the iPad will look great when rendered by its WebKit engine on its 1024x768 screen.  You can also be guaranteed that the same app will look atrocious when rendered in IE 9 on a 1024x768 monitor, or when rendered on a Linux/Firefox laptop with a 1024x768 screen.</p>
+
+<p>So then a developer must inject logic into their code that detects the OS/browser/version combination, along with code specific to each combination, to ensure that the app looks the same no matter where it is run.  And this is the future?</p>
+
+<p>Why can’t there be an open source plugin, similar to Flash or Silverlight, that browser vendors must support in order to be HTML5 compliant?  That would solve all our problems!  You would get pixel perfect rendering!  Your app would be lean and mean and free of any case statements!  It would be awesome!</p>
+
+<p>Why can’t we band together and demand such a solution?  Think about it, it could work!  I’ll start a petition… wait… what?  Oh yeah, I almost forgot, we’ve done that before.  It’s called Java.</p>
+
+<p>Oh well, I got excited there for a moment.</p>
+
+<h2 id="i-can-only-do-so-much">I can only do so much</h2>
+
+<p>What if you want your HTML5 app to be able to use the nifty features of the iPhone or iPad?  Well, aside from basic functionality, you’re out of luck, at least for now.  Device specific features such as the accelerometer, camera, compass, and multi-touch display are currently off limits to non-native apps.</p>
+
+<h2 id="you-re-so-negative-i-m-positive">You’re so negative, I’m positive!</h2>
+
+<p>Although the tone of this article might lead you to believe that I am railing against HTML5, the truth is that I am very much rooting for it to succeed (and I think it will).  What I am trying to point out is that there are things to consider before jumping into the technology.</p>
+
+<p>In the long run, I’d be surprised if HTML5 weren’t a huge hit and the technology of choice for app developers.  In particular the combination of the iPad and HTML5 has the potential to be a real game changer, both in the consumer realm as well as the business world.</p>
+
+<p>Even in its current state, there are still some categories of apps that could benefit from using HTML5.  One such category is Enterprise RIA’s.  Such apps are typically deployed to internal users, in a controlled environment.  Having such an audience would afford developers the luxury of targeting specific OS/browser/version combinations.</p>
+
+<p>If you are considering using HTML5 in your next project, take the time to weigh out the pros and cons.  And if you decide not to use it now, make sure to keep tabs on the specification’s progress, because when you have Google and Apple behind something, it’s very likely that it’s here to stay!</p>
+
+<p>What do you think of the viability of HTML5?</p>
+
+  </div>
+
+</section>
+
+    <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
+  </div>
+</body>
+</html>
+

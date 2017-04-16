@@ -67,3 +67,21 @@ As a bonus, I have decided to include the next 10 technologies with their RSIJT 
 </center>
 
 Over time I will be revising the list and formula. If you have any suggestions on how to make this more accurate or useful, or if you know of other JS tech that should be included in the analysis, please drop me a line!
+
+---
+
+### **Reader Comments**
+
+**Teun Roodvoets**  
+*March 21, 2017*
+
+Hello gloparco,
+
+Thank you for your post/article.
+
+I miss Aurelia.io in your list, which I thought has attracted more and more interest in 2016 and 2017.
+
+In my opinion, Bootstrap, SASS and LESS are CSS technologies and not Javascript technologies…
+
+Keep up the good work,  
+Teun

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         One Man&#39;s HTML5 Developer Workflow 
+      
+    </title>
+    <link rel="canonical" href="/post/one-mans-html5-developer-workflow/">
+
+    <style>
+
+*
+    {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    }
+
+body
+    {
+    color: #333;
+    background: #001933;
+    font-family: 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size: 1em;
+    line-height: 160%;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+a h1, a h2, a h3
+    {
+    color: #7F7927;
+    }
+
+.noDecoration
+    {
+    text-decoration: none;
+    }
+
+h1, h2, h3
+    {
+    margin-top: 1.5em;
+    line-height: 120%;
+    color: #7F7927;
+    }
+
+h1
+    {
+    font-size: 2em;
+    }
+
+h2
+    {
+    font-size: 1.6em;
+    }
+
+h3
+    {
+    font-size: 1.3em;
+    }
+
+#wrapper
+    {
+    width: 700px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+#content
+    {
+    text-align: left;
+    padding: 0 20px;
+    margin-top: -40px;
+    }
+
+#content h1,
+#content h2
+    {
+    margin-bottom: 10px;
+    }
+
+#content .entry-content
+    {
+    margin-top: 1em;
+    }
+
+#logo
+    {
+ 	position: relative;
+ 	z-index: 200;
+ 	top: 0;
+ 	width: 100px;
+ 	height: 100px;
+    }
+
+p
+    {
+    margin: 1em 0;
+    }
+
+a img
+    {
+    border:none;
+    }
+
+img
+    {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+    }
+
+pre
+    {
+    font-size: 0.8em;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    white-space: normal;
+    }
+
+code.inline
+    {
+    padding: 1px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    }
+
+em,q,em,dfn
+    {
+    font-style: italic;
+    }
+
+strong
+    {
+    font-weight: 600;
+    }
+
+a:link, a:visited
+    {
+	color: #2A5B8A;
+    }
+
+a:active, a:hover
+    {
+	color: #6990B6;
+    }
+
+.sans, html .gist .gist-file .gist-meta
+    {
+    font-family: "Open Sans", "Myriad Pro", Myriad, sans-serif;
+    }
+
+.heading, .serif, h1, h2, h3
+    {
+    font-family: 'Lora', serif;
+    }
+
+table
+    {
+    border: 1px solid #bdb76b;
+    border-collapse: collapse;
+    }
+
+tr
+    {
+    background: #E2DD9F;
+    }
+
+tr:nth-child(even)
+    {
+    background: #bdb76b;
+    }
+
+th, td
+    {
+    padding: 10px;
+    border: 0;
+    text-align: left;
+    }
+
+.menu
+    {
+    position: relative;
+    z-index: 100;
+    top: -70px;
+    width: 100%;
+    height: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    }
+
+.menu ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.menu li
+    {
+    margin: 0 20px;
+    }
+
+.menu a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+#sub-header, time
+    {
+    color: #7F7927;
+    font-size: 0.8em;
+    }
+
+#sub-header
+    {
+    margin: 0 4px;
+    }
+
+ul.posts_listing
+    {
+    list-style: none;
+    }
+
+.moreSpace
+    {
+    padding: 20px 0;
+    }
+
+.signature
+    {
+    padding: 20px 0;
+    }
+
+a.signature
+    {
+    color: #7F7927;
+    }
+
+img
+    {
+    display: inline;
+    float: left;
+    margin-right: 24px;
+    margin-top: 4px;
+    }
+
+.paginationWrapper
+    {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    background: #bdb76b;
+    border-top: 1px solid #aa5;
+    border-bottom: 1px solid #aa5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+.paginationWrapper ul
+    {
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+
+.paginationWrapper li
+    {
+    margin: 0 20px;
+    }
+
+.paginationWrapper a
+    {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    }
+
+ 
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <section id="nav">
+            <div id="logo"><a href="/"><img src="/goldLogo.png" alt="" title="Elemdage Logo" width="100" height="100"/></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/" title="Blog Posts">All Posts</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+<section id=content>
+  <h1> One Man&#39;s HTML5 Developer Workflow </h1>
+
+  <div id=sub-header>
+    January 2012 · 13 minute read
+  </div>
+
+  <div class=entry-content>
+    
+
+<p>We are now squarely in the age of HTML5; or the age of HTML5, JavaScript, and CSS3, if you prefer. That being the case, it amazes me that for those poor souls who are new to the world of front-end development, there is little written on what their developer workflow might look like. With them in mind, I am offering up a starting point, based on my own experience and preferences.</p>
+
+<p><img title="HTML5 Workflow" src="/html5workflow.png" width="614" height="461" /></p>
+
+<h2 id="hardware-os">Hardware/OS</h2>
+
+<p>I spent the better part of 20 years on Windows-based machines, and I don’t have one fond memory to share. If you’re into constant troubleshooting and tweaking, then by all means go Windows.</p>
+
+<p>However, aside from my personal preference for Macs, there is one very good reason why you should seriously consider doing all of your development on one: iOS development. The only way you can develop for an iPad or iPhone is by using Xcode on a Mac. Since that is the case, who wants to have to develop on more than one machine? Not me, so Mac it is! (thankfully)</p>
+
+<h2 id="design">Design</h2>
+
+<p><img src="/pixelmator.png" alt="Pixelmator" /> For design, I use two tools extensively. For interactive mockups, I use Keynote with templates from <a href="http://keynotekungfu.com/">Keynote Kung-Fu</a>, although templates from <a href="http://keynotopia.com/">Keynotopia</a> are equally impressive. You’d be surprised how easy it is to create a very rich, professional looking demo using Keynote.</p>
+
+<p>For all of my graphics design work, I rely on the excellent <a href="http://www.pixelmator.com/">Pixelmator</a>. Using this tool, I can create anything I need for my Web or mobile Apps. The latest version even has support for vector graphics.</p>
+
+<p>If you are into responsive design (and you should be), you should look into the usage of SVG graphics instead of raster/bitmap graphics. If you decide that’s the direction you want to go, then Pixelmator at this point can’t help you. You see, although you can create vector images within the tool, you currently cannot export such graphics to a usable format (i.e., SVG).</p>
+
+<p><img src="/inkscape.png" alt="Inkscape" /> Therefore, you’ll need to add another tool to your toolbox. I am currently looking at a free, open source tool called <a href="http://inkscape.org/">Inkscape</a>. It’s interface is not much to look at, but it seems to have enough features to get the job done. Alternatives include <a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a> and <a href="http://www.corel.com/corel/category.jsp?rootCat=cat20146&amp;cat=cat3430091">Corel Draw</a>. Warning: be prepared to shell out some dough for either.</p>
+
+<h2 id="development-editor">Development – Editor</h2>
+
+<p><img src="/sublime.png" alt="Sublime" /> For development, I prefer a basic text editor with syntax highlighting, auto-completion, and customization options. The reason I prefer a text editor over a seemingly more rich Integrated Development Environment (IDE), such as eclipse, is that I don’t find IDE’s more feature rich at all, and IDE’s tend to be bloated and cumbersome to boot.</p>
+
+<p>My editor of choice is <a href="http://www.sublimetext.com/2">Sublime Text 2</a>.</p>
+
+<p>Sublime Text is, quite frankly, the best editor I have ever used. It not only enhances my productivity, but it looks good doing it. Aesthetics aside, there are other, more compelling reasons to seriously consider this fine piece of software. Here are just a few out of dozens one could list:</p>
+
+<h3 id="speed">Speed</h3>
+
+<p>Do you hate the Mac beach ball as much as I do (you know, that colorful spinning wheel that shows up whenever the Mac is busy)? If you do, then you owe it to yourself to download a copy of Sublime right now. It is fast – really, really fast!</p>
+
+<p>There’s fast file switching, fast scrolling of large files, fast search of one or many files, fast loading of large files. Everything you do in Sublime is quick; there’s no waiting for anything. You can have 20 tabs open at a time, and guess what? It’s still just as responsive as when you have only one tab open.</p>
+
+<h3 id="multi-selection">Multi-selection</h3>
+
+<p>I was blown away when I first saw this demonstrated in an <a href="http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/">article</a> by Jeffrey Way. Basically, it allows you to highlight and/or place cursors on multiple parts of the document, at which point, you can make many edits at once. A real time saver for me has been variable replacement using multi-selection. Using the search function, I can find all instances of a variable (nothing new). Using ‘find and replace’ in a traditional editor limits you to simple replacements or causes you to have to be a regex expert. Such is not the case with Sublime – perform a search, select ‘find all’, and presto! you now have each instance highlighted, with a cursor next to it, allowing you to make any changes to all instances at once, no matter how complex they may be.</p>
+
+<h3 id="build-system">Build System</h3>
+
+<p>With the built-in build system, you can launch any type of app you’d like, via a menu or hot-key combination (usually F7), or even automatically after saving a file. So, for instance, I have a build system for CoronaSDK that will automatically launch the Corona simulator whenever I save changes to my lua files.</p>
+
+<p>I haven’t yet set up a build system for HTML5/JavaScript/CSS. There’s so much flexibility on how to set it up, I still haven’t decided on a solution. What I’d like to do is kick off a build every time I save one of my project files. The build would then compile <a href="http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/">.less files</a> into .css files as needed, minify javascript files, create auto-generated docs as needed, run test scripts as needed, and then open up or refresh the browser, so I can see my changes. If there are any Sublime experts out there reading this, I’d love to know how to get this to work. I believe it can be done though.</p>
+
+<h3 id="plug-ins">Plug-ins</h3>
+
+<p>One of the main strengths of the tried and true TextMate editor has been its plugin capabilities, and the availability of a vast array of third party plugins that have been developed over the years. Sublime is fully compatible with nearly all of TextMate’s plug ins. In fact, I should rephrase by saying, I haven’t found one TextMate plugin that isn’t compatible, although I do have one that gives me a warning each time I launch Sublime (the CoronaSDK plugin for some reason).</p>
+
+<p>In addition, Will Bond has created the excellent ‘Package Control’ plugin, which allows you to easily discover and install other plugins. This is the first plugin that everybody should install.</p>
+
+<p>From there, you can install any of a myriad of available plugins. If you can dream it up, chances are there is a plugin for it already. And if by some off chance there is not, then Sublime makes it easy enough to create your own.</p>
+
+<p>Here are the plugins that I use regularly:</p>
+
+<p><a href="http://wbond.net/sublime_packages/sftp">Sublime SFTP</a>: another excellent plugin by Will, this allows me to save my files and projects to my remote server without having to fire up Filezilla or the Terminal. One cool feature is the auto-save option. I have it set up so that when I save any of my files locally, they are automatically pushed to my server as well. This comes in handy when I want to test some of my code on an iPad for instance.</p>
+
+<p>I need to give Will some props here. The guy is a very responsive, available developer – case in point: before I gladly paid the $16 license fee for this plugin, I emailed Will asking if he could add support for the case where an external tool or build process auto generates a file, such as in my case where a LESS compiler auto-generates a CSS file. While Will was somewhat handcuffed in what he could do, nonetheless, he came up with a solution in his very next build and now this plugin’s file monitoring feature is something I use regularly.</p>
+
+<p><a href="https://github.com/Kronuz/SublimeLinter">SublimeLinter</a>: a <a href="http://www.jshint.com/">JSHint</a> plugin that is invaluable in helping me detect JavaScript errors.</p>
+
+<p><a href="https://github.com/SublimeText/SideBarGit">SideBarGit</a>: this adds basic and some advanced git functionality to the sidebar, allowing you to perform commits and other git commands without leaving the editor.</p>
+
+<p><a href="http://blog.elemdage.com/wp-content/uploads/2012/01/Theme-Gene.zip">My own theme</a>: although I like a lot of the visual themes that are out there already, most of them tend to be light text on a dark background. If I’m coding for quite a while, I tend to prefer dark text on a light background. None of the themes really struck my fancy, so I went ahead and created my own. Here is a screenshot of an HTML5 page:</p>
+
+<p><img title="Sublime ScreenShot" src="/SublimeScreenShot.png" width="640" height="393"/></p>
+
+<p>If anyone is interested in my theme, feel free to download it, here: <a href="http://blog.elemdage.com/wp-content/uploads/2012/01/Theme-Gene.zip">Theme – Gene</a></p>
+
+<h3 id="notable-editor-alternatives">Notable Editor Alternatives</h3>
+
+<p><a href="http://macromates.com/">TextMate</a>: decent, but outdated de-facto standard for many developers; the new <a href="http://blog.macromates.com/2011/textmate-2-0-alpha/">2.0 alpha</a> version is finally out after years in the making, but compared to Sublime, it looks like ‘too little, too late’</p>
+
+<p><a href="http://code.google.com/p/macvim/">MacVim</a>: it’s Vim, need I say more? ;-) Actually, I do need to say more: I hate, hate, hate, hate, hate Vim – did I mention that I hate it? I just don’t get how anyone could like the antiquated Unix-originating Vim with it’s stupid modes, over any of the other options that are out there. Emacs was waaay better than Vim back in the day; nano is better than Vim now; and they both pale in comparison to Sublime, and the other feature rich editors listed here; and yet, excellent coders, such as Thomas Fuchs use this editor — like I said, I don’t get it</p>
+
+<p><a href="http://www.barebones.com/products/bbedit/index.html?utm_source=thedeck&amp;utm_medium=banner&amp;utm_campaign=bbedit">BBEdit</a>: It’s nice, but it just isn’t as snappy, full featured, or nice to look at as Sublime.</p>
+
+<p><a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a>: BBEdit’s little brother. It might be the best free editor out there, but lacks many of the features the others have.</p>
+
+<h3 id="notable-ide-alternatives">Notable IDE Alternatives</h3>
+
+<p><a href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a>: I nearly hate Dreamweaver as much as Vim. Actually, I might even hate it more. I have never seen a more bloated, slow, jumbled mess of an application in my life. It’s a memory hog, as are most Adobe products, but unlike FlashBuilder, it’s interface and functionality does not even come close to making up for it. And get this – they’re charging $400 for this piece of garbage! Stay away; stay far, far away.</p>
+
+<p><a href="http://aptana.com/">Aptana Studio</a>: if you like Eclipse, you might like Aptana. I don’t like Eclipse – ’nuff said.</p>
+
+<p><a href="http://panic.com/coda/">Coda</a>: has issues with large files; generally slow and bloated, albeit not as much as Dreamweaver or Aptana.</p>
+
+<p><a href="http://macrabbit.com/espresso/">Espresso</a>: used the trial version and was underwhelmed.</p>
+
+<p><a href="http://netbeans.org/">NetBeans</a>: a free, open source IDE that people I know use. Not for me, though.</p>
+
+<p><a href="http://www.jetbrains.com/webstorm/">WebStorm</a>: cheezy name, no doubt, but a lot of commenters, below, seem to like it.</p>
+
+<h2 id="development-supporting-tools">Development – Supporting Tools</h2>
+
+<p><img src="/codekit.png" alt="CodeKit" /> In lieu of using Sublime’s built in build system to compile my .less files and refresh my browser, I am currently using <a href="http://incident57.com/codekit/">CodeKit</a> to do the same. CodeKit does some other things like running JavaScript through jshint, but since I’m already doing that in Sublime, I don’t really need that feature. The only complaint I have for CodeKit is that, while it will auto reload the browser whenever you change your .less or .html files, the tool does not auto update whenever I make changes to my JavaScript files. I’m not sure if this is a case of user error, or if it’s a limitation of the tool, but most of my code changes are done in JavaScript, so that would be a nice feature to add. EDIT: Per the author’s comment, below, this issue has been fixed.</p>
+
+<p>There are alternatives to CodeKit that do much the same thing and are worth checking out. One such alternative is <a href="http://wearekiss.com/simpless">SimpLESS</a>, but there are others as well.</p>
+
+<h2 id="debugging">Debugging</h2>
+
+<p>I use Safari as my test browser, making use of their excellent developer tools. For those who don’t know, these built-in tools allow you to inspect your scripts, set code break-points and watch expressions, view the debug console, and more. It’s really an invaluable tool.</p>
+
+<p>To debug mobile apps, there is nothing like Safari’s tools available. One interesting solution has piqued my interest though. It’s called <a href="http://phonegap.github.com/weinre/">weinre</a>, which is not a hot dog substitute, but rather a &ldquo;we&rdquo;b &ldquo;in&rdquo;spector &ldquo;re&rdquo;mote, hence the name.</p>
+
+<p><img src="/resize.png" alt="Resize Plugin" /> In addition, I use but one Safari plugin – <a href="http://resizesafari.com/">Resize</a> by Chen Luo. It allows you to quickly resize your browser to pre-set exact dimensions. Chen has built in nearly every dimension you’d be interested in: the iPhone’s 320×480, the iPhone retina’s 640×960, the iPad’s 1024×768, and a ton of others. For those not willing or able to shell out the $9 for this excellent plugin, Chen also provides a free website that works similarly, albeit by opening a new browser window instead of resizing the current window. It’s called <a href="http://resizemybrowser.com/">resizeMyBrowser</a>.</p>
+
+<h2 id="testing">Testing</h2>
+
+<p>For JavaScript development, unit testing is desirable. I have to admit, however, that I haven’t really standardized on one tool as of now. I am currently looking at several helpful libraries and tools, including <a href="http://www.testling.com/">testling</a> and the straightforward <a href="https://gist.github.com/976405">Unit Test</a> library.</p>
+
+<p>For mobile development, you’ll need to use emulators. For iOS, there are the emulators that come with Xcode. For Android, Google provides an <a href="http://developer.android.com/guide/developing/tools/emulator.html">emulator</a>. If you want to go further than that and test on specific device emulators, there’s Adobe’s <a href="http://www.adobe.com/products/devicecentral.html">Device Central</a>.</p>
+
+<h2 id="doc-generators">Doc Generators</h2>
+
+<p>I’m not sure if most people really need doc generators (myself included). Proper coding techniques and naming conventions should provide for self-evident logic enlightenment.</p>
+
+<p>That being said, when working on a large team, or when creating re-usable libraries or API’s, documentation is a must. There currently seems to be no de-facto standard for JavaScript doc generation, as is the case in, say Java (with the venerable JavaDoc). So, here is my pick of the litter for those interested:</p>
+
+<p><a href="http://code.google.com/p/jsdoc-toolkit/">JSDoc2</a>: the original JSDoc has been deprecated, so you may choose from this version, or <a href="https://github.com/micmath/jsdoc">JSDoc3</a>, currently in beta.</p>
+
+<p><a href="http://developer.yahoo.com/yui/yuidoc/">YUIDoc</a>: I like the default output of this tool better than JSDoc, but it’s still not perfect.</p>
+
+<p><a href="http://pdoc.org/">PDoc</a>: the output that it generates is the best of the three listed here, but I’m not sure how it will do with non-Prototype code (I think it should work, but I’m not positive).</p>
+
+<p><a href="http://jashkenas.github.com/docco/">docco</a>: if you’re looking for something a little different, you may want to consider docco. Its output consists of two panes – one with the code, and the other with comments mapped to the code. I haven’t seen it used anywhere, except in the documentation of the excellent JS MVC library <a href="http://backbonejs.org/">backbone.js</a>.</p>
+
+<h2 id="version-control">Version Control</h2>
+
+<p>You should get used to using version control, even if you’re a solo developer. It’s a good habit, and chances are, sooner or later, you’ll want to share your code or collaborate with others. Any version control product will do, but the two you should be most educated on at this point are git and svn.</p>
+
+<h2 id="mobile-deployment">Mobile Deployment</h2>
+
+<p><img src="/phonegap.jpg" alt="PhoneGap" /> There will no doubt be many cases when you’ll want to deploy your HTML5 app to devices other than the browser. In such cases, you could let mobile users access your site via their web browser. Or, you could package up your code into a native shell, thereby creating what is known as a “hybrid app” (although this term can mean any number of things, depending on whom you ask).</p>
+
+<p>To create such hybrid apps, you basically have two choices: <a href="http://phonegap.com/">PhoneGap</a>, or <a href="http://www.appcelerator.com/products/titanium-cross-platform-application-development/">Titanium</a>. I prefer the simplicity and larger developer community of PhoneGap (a.k.a., Apache Cordova – yeah, good luck with that name change!). But both have their place and their supporters.</p>
+
+<p><img src="/testflight.jpg" alt="TestFlight" /> Once you have built your hybrid app, it’s deployed to your app store of choice by whatever means you would normally submit a native app. If you first want to beta-test your hybrid app, then I recommend the über-cool <a href="https://testflightapp.com/">TestFlight</a>, which makes the otherwise painful process of distributing your app to beta-testers a breeze.</p>
+
+<p>I should also mention <a href="http://www.appmobi.com/">AppMobi</a> here for completeness, but as I state in the comments, below, I was put off by their message board postings on their site.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>I’ve covered a lot of ground here, going for breadth rather than depth. That being said, I hope that this was a useful resource for those looking to piece together the often confusing world of HTML5 development.</p>
+
+<p>I would love to hear what your favorite tools are and what your development workflow is. I am always open to learning about new tools or techniques and will gladly update this posting as I refine my own workflow even further.</p>
+
+  </div>
+
+</section>
+
+    <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
+  </div>
+</body>
+</html>
+
