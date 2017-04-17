@@ -6,10 +6,20 @@
     <description>Recent content on Elemdage: Blog by Gene Loparco</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Apr 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo and AWS for Dummies</title>
+      <link>/post/hugo-and-aws-for-dummies/</link>
+      <pubDate>Mon, 17 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/hugo-and-aws-for-dummies/</guid>
+      <description>I guess I must be a dummy. In my quest to move this website from Media Temple to AWS, I searched the Internet for relevant examples and tutorials. While there was excellent information to be found, most of the articles were either outdated, overly complex, or a combination of the two.
+Following is my personal workflow for setting up a Hugo website, deploying it to AWS, and configuring it all using a custom domain.</description>
+    </item>
     
     <item>
       <title>Top 20 JavaScript Technologies: March 2017</title>
@@ -85,16 +95,6 @@ This notion really started to gain traction, or at least publicity, in the mid-9
       <guid>/post/html5-is-it-ready-for-prime-time/</guid>
       <description>The recent announcement by Apple that it has sold over one million iPads in just 28 days has developers chomping at the bit to create apps for the iPhone OS. However, for many of these App Store success story hopefuls, there are at least two problems that they face before writing even a single line of code.
 If one would like to develop a native app for the iPhone OS, they must either take a time machine back to 1988 and learn the nasty, archaic language known as Objective-C, or they must take a leap of faith and hope that Apple’s recent Developer Agreement changes don’t apply to Adobe and other vendors offering tools that translate various languages into native iPhone code.</description>
-    </item>
-    
-    <item>
-      <title>Hugo and AWS for Dummies</title>
-      <link>/post/hugo-and-aws-for-dummies/</link>
-      <pubDate>Tue, 25 May 2010 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hugo-and-aws-for-dummies/</guid>
-      <description>I guess I must be a dummy. In my quest to move this website from Media Temple to AWS, I searched the Internet for relevant examples and tutorials. While there was excellent information to be found, most of the articles were either outdated, overly complex, or a combination of the two.
-Following is my personal workflow for setting up a Hugo website, deploying it to AWS, and configuring it all using a custom domain.</description>
     </item>
     
   </channel>

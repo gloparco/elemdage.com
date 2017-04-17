@@ -154,20 +154,37 @@ pre
     {
     font-size: 0.8em;
     font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
-    border: 1px solid #ddd;
+    border: 1px solid #CCCB9B;
     border-radius: 3px;
     margin: 0;
     padding: 10px;
-    background-color: #f8f8f8;
+    background-color: #1D1F20;
+    }
+
+pre .language-wrap
+    {
     white-space: normal;
     }
 
 code.inline
     {
     padding: 1px 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #CCCB9B;
     border-radius: 3px;
-    background-color: #f8f8f8;
+    background-color: #F5F5EB;
+    }
+
+blockquote
+    {
+    background: #CCCB9B;
+    }
+
+blockquote p
+    {
+    background: #F5F5EB;
+    margin-left: 10px;
+    padding: 20px;
+    font-style: italic;
     }
 
 em,q,em,dfn
@@ -202,18 +219,18 @@ a:active, a:hover
 
 table
     {
-    border: 1px solid #bdb76b;
+    border: 1px solid #E5E4CE;
     border-collapse: collapse;
     }
 
 tr
     {
-    background: #E2DD9F;
+    background: #EDEDDD;
     }
 
 tr:nth-child(even)
     {
-    background: #bdb76b;
+    background: #F5F5EB;
     }
 
 th, td
@@ -333,7 +350,6 @@ img
     font-size: 0.9em;
     }
 
- 
 </style>
 
 
@@ -356,7 +372,7 @@ img
   <h1> Hugo and AWS for Dummies </h1>
 
   <div id=sub-header>
-    May 2010 · 1 minute read
+    April 2017 · 1 minute read
   </div>
 
   <div class=entry-content>
@@ -371,6 +387,22 @@ img
 <p>using S3, CloudFront, and Route53.</p>
 
 <h2 id="step-2-configuring-aws">Step 2: Configuring AWS</h2>
+
+<p>Set up a Bucket Policy.  I used the example policy from Amazon:</p>
+<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span><span style="color: #d0d0d0">{</span>
+<span style="color: #6ab825; font-weight: bold">&quot;Version&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;2012-10-17&quot;</span><span style="color: #d0d0d0">,</span>
+<span style="color: #6ab825; font-weight: bold">&quot;Statement&quot;</span><span style="color: #d0d0d0">:</span>
+    <span style="color: #d0d0d0">[{</span>
+    <span style="color: #6ab825; font-weight: bold">&quot;Sid&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;PublicReadGetObject&quot;</span><span style="color: #d0d0d0">,</span>
+    <span style="color: #6ab825; font-weight: bold">&quot;Effect&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;Allow&quot;</span><span style="color: #d0d0d0">,</span>
+    <span style="color: #6ab825; font-weight: bold">&quot;Principal&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;*&quot;</span><span style="color: #d0d0d0">,</span>
+    <span style="color: #6ab825; font-weight: bold">&quot;Action&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">[</span><span style="color: #ed9d13">&quot;s3:GetObject&quot;</span><span style="color: #d0d0d0">],</span>
+    <span style="color: #6ab825; font-weight: bold">&quot;Resource&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">[</span><span style="color: #ed9d13">&quot;arn:aws:s3:::example-bucket/*&quot;</span><span style="color: #d0d0d0">]</span>
+    <span style="color: #d0d0d0">}]</span>
+<span style="color: #d0d0d0">}</span>
+</pre></div>
+
+<p>Replace &ldquo;example-bucket&rdquo; with your bucket name, which should be the same as your domain name, which in my case is elemdage.com.</p>
 
 <h2 id="step-3-configuring-nameservers">Step 3: Configuring Nameservers</h2>
 

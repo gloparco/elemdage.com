@@ -43,20 +43,21 @@ I intend on posting RISPL ratings over time, perhaps monthly.  I also intend to 
 
 ### **Reader Comments**
 
-**Satish Venkatesan**  
-*March 18, 2017*
-
+**Satish Venkatesan** - *March 18, 2017*
+<div class="comment">
 Good one Gene. It will be nice to see how your index compares with other similar indices over a period of time.
+</div>
 
-**Gene's reply**
+<div class="replyLabel">Author's reply:</div>
 
+<div class="reply">
 I agree – I’m looking forward to seeing how this list trends from here.
+</div>
 
-<div class="commentSeparator">~~~</div>
+<div class="commentSeparator"></div>
 
-**Volkan Ozcelik**
-*March 22, 2017*
-
+**Volkan Ozcelik** - *March 22, 2017*
+<div class="comment">
 Nice post Gene.
 
 JavaScript will be a strong language for the next five years at least.
@@ -68,3 +69,4 @@ Nonetheless, Java will always be in the enterprise software arsenal.
 For swift I adhere to the crazy-hot litmus test (i.e. a girl is allowed to be crazy as long as she is equally hot) — I have same feelings for Go too, though it is less crazy and arguably less hot it is a solid language for certain set of tasks.
 
 It would be nice to see how things change over time.
+</div>

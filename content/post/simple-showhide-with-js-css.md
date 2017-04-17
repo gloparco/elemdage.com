@@ -143,16 +143,12 @@ The UI consists of a header, a single button, and an initially hidden content ar
 
 Feel free to comment on this technique or to post your own techniques for accomplishing the same thing.
 
-
 ---
 
 ### **Reader Comments**
 
-**Justin Christman**  
-*April 23, 2014*
-
+**Justin Christman** - *April 23, 2014*  
 Nice tutorial, very well put together, still a novice on JS, and love to learn new techniques to improve my language skills. Thanks.
 
-**Gene's reply**
-
+**Author's reply:**  
 My pleasure Justin, glad to know it helped someone out.

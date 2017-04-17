@@ -20,7 +20,7 @@ To make the list relevant, the ratings are computed based on the last month’s 
 
 The technologies included in this analysis include:
 
-    AMD, angular2, angularJS, babel, backbone, bootstrap, bower, chart.js, coffeescript, common.js, d3, ember.js, es6, express.js, flux, foundation, grunt, gulp, handlebars, impress.js, jasmine, jquery, karma, leaflet, less, lodash, meteor, mocha, modernizr, moment.js, mustache, node, polymer, react-native, React.js, redux, require.js, reveal.js, sails, sass, semanticUI, socket.io, three.js, typescript, underscore, vue.js, web components
+> AMD, angular2, angularJS, babel, backbone, bootstrap, bower, chart.js, coffeescript, common.js, d3, ember.js, es6, express.js, flux, foundation, grunt, gulp, handlebars, impress.js, jasmine, jquery, karma, leaflet, less, lodash, meteor, mocha, modernizr, moment.js, mustache, node, polymer, react-native, React.js, redux, require.js, reveal.js, sails, sass, semanticUI, socket.io, three.js, typescript, underscore, vue.js, web components
 
 ## 10 Most Popular JavaScript Technologies
 
@@ -74,7 +74,7 @@ Over time I will be revising the list and formula. If you have any suggestions o
 
 **Teun Roodvoets**  
 *March 21, 2017*
-
+<div class="comment">
 Hello gloparco,
 
 Thank you for your post/article.
@@ -85,3 +85,4 @@ In my opinion, Bootstrap, SASS and LESS are CSS technologies and not Javascript 
 
 Keep up the good work,  
 Teun
+</div>
