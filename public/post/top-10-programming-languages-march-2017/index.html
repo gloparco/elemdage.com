@@ -98,6 +98,26 @@ hr.footer
     padding: 10px 0;
     }
 
+.comment, .reply
+    {
+    padding: 10px;
+    border: 1px solid #CCCB9B;
+    border-radius: 3px;
+    background: #F5F5EB;
+    }
+
+.reply
+    {
+    margin: 0 0 20px 40px;
+    }
+
+.replyLabel
+    {
+    margin: 10px 0 10px 40px;
+    font-weight: 600;
+    font-style: italic;
+    }
+
 #wrapper
     {
     width: 700px;
@@ -158,7 +178,7 @@ pre
     border-radius: 3px;
     margin: 0;
     padding: 10px;
-    background-color: #1D1F20;
+    background: #1D1F20;
     }
 
 pre .language-wrap
@@ -171,20 +191,15 @@ code.inline
     padding: 1px 5px;
     border: 1px solid #CCCB9B;
     border-radius: 3px;
-    background-color: #F5F5EB;
-    }
-
-blockquote
-    {
-    background: #CCCB9B;
+    background: #F5F5EB;
     }
 
 blockquote p
     {
     background: #F5F5EB;
-    margin-left: 10px;
     padding: 20px;
     font-style: italic;
+    border-left: 10px solid #CCCB9B;
     }
 
 em,q,em,dfn
@@ -219,8 +234,16 @@ a:active, a:hover
 
 table
     {
-    border: 1px solid #E5E4CE;
+    border: 1px solid #CCCB9B;
     border-collapse: collapse;
+    max-width: 400px;
+    }
+
+thead td
+    {
+    background: #7F7927;
+    color: #fff;
+    font-weight: 600;
     }
 
 tr
@@ -378,7 +401,7 @@ img
   <div class=entry-content>
     
 
-<p><img src="/languages.jpg" alt="Languages Logo" /> The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017.  RSIPL was created after reading several similar articles and lists, most notably, the <a href="http://redmonk.com/sogrady/2017/03/17/language-rankings-1-17/" title="Red Monk Language Rankings">RedMonk Programming Languages Rankings</a>.  The ranking methodology RedMonk uses is based upon popularity of the languages on Github (measuring &ldquo;code&rdquo;, as they put it) and StackOverflow (measuring &ldquo;discussion&rdquo;).  As good as this list is, I feel that it is perhaps less timely than it could be, and that it is missing a third critical piece of the puzzle: job postings.</p>
+<p><img src="/languages.png" alt="Languages Logo" /> The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017.  RSIPL was created after reading several similar articles and lists, most notably, the <a href="http://redmonk.com/sogrady/2017/03/17/language-rankings-1-17/" title="Red Monk Language Rankings">RedMonk Programming Languages Rankings</a>.  The ranking methodology RedMonk uses is based upon popularity of the languages on Github (measuring &ldquo;code&rdquo;, as they put it) and StackOverflow (measuring &ldquo;discussion&rdquo;).  As good as this list is, I feel that it is perhaps less timely than it could be, and that it is missing a third critical piece of the puzzle: job postings.</p>
 
 <h2 id="rsipl-criteria">RSIPL Criteria</h2>
 
@@ -393,7 +416,8 @@ img
 <p>Following are the top 10 languages in March 2017, using the RSIPL formula:</p>
 
 <p><center class="moreSpace">
-    <table style="width: 50%">
+    <table>
+        <thead><td>Rank</td><td>Language</td><td style="text-align:right">RSIPL</td></thead>
         <tr><td>1.</td><td>JavaScript</td><td style="text-align:right">89.2</td></tr>
         <tr><td>2.</td><td>Java</td><td style="text-align:right">86.2</td></tr>
         <tr><td>3.</td><td>Python</td><td style="text-align:right">48.4</td></tr>
@@ -417,21 +441,22 @@ img
 
 <h3 id="reader-comments"><strong>Reader Comments</strong></h3>
 
-<p><strong>Satish Venkatesan</strong><br />
-<em>March 18, 2017</em></p>
+<p><strong>Satish Venkatesan</strong> - <em>March 18, 2017</em>
+<div class="comment">
+Good one Gene. It will be nice to see how your index compares with other similar indices over a period of time.
+</div></p>
 
-<p>Good one Gene. It will be nice to see how your index compares with other similar indices over a period of time.</p>
+<div class="replyLabel">Author's reply:</div>
 
-<p><strong>Gene&rsquo;s reply</strong></p>
+<div class="reply">
+I agree – I’m looking forward to seeing how this list trends from here.
+</div>
 
-<p>I agree – I’m looking forward to seeing how this list trends from here.</p>
+<div class="commentSeparator"></div>
 
-<div class="commentSeparator">~~~</div>
-
-<p><strong>Volkan Ozcelik</strong>
-<em>March 22, 2017</em></p>
-
-<p>Nice post Gene.</p>
+<p><strong>Volkan Ozcelik</strong> - <em>March 22, 2017</em>
+<div class="comment">
+Nice post Gene.</p>
 
 <p>JavaScript will be a strong language for the next five years at least.</p>
 
@@ -441,15 +466,16 @@ img
 
 <p>For swift I adhere to the crazy-hot litmus test (i.e. a girl is allowed to be crazy as long as she is equally hot) — I have same feelings for Go too, though it is less crazy and arguably less hot it is a solid language for certain set of tasks.</p>
 
-<p>It would be nice to see how things change over time.</p>
+<p>It would be nice to see how things change over time.
+</div></p>
 
   </div>
 
 </section>
 
 <center class="moreSpace"><a class="email" href="mailto:blog@elemdage.com" title="email Gene Loparco">Comment on this post</a></center>
-<hr class="footer">
 
+    <hr class="footer">
     <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
   </div>
 </body>

@@ -99,6 +99,26 @@ hr.footer
     padding: 10px 0;
     }
 
+.comment, .reply
+    {
+    padding: 10px;
+    border: 1px solid #CCCB9B;
+    border-radius: 3px;
+    background: #F5F5EB;
+    }
+
+.reply
+    {
+    margin: 0 0 20px 40px;
+    }
+
+.replyLabel
+    {
+    margin: 10px 0 10px 40px;
+    font-weight: 600;
+    font-style: italic;
+    }
+
 #wrapper
     {
     width: 700px;
@@ -159,7 +179,7 @@ pre
     border-radius: 3px;
     margin: 0;
     padding: 10px;
-    background-color: #1D1F20;
+    background: #1D1F20;
     }
 
 pre .language-wrap
@@ -172,20 +192,15 @@ code.inline
     padding: 1px 5px;
     border: 1px solid #CCCB9B;
     border-radius: 3px;
-    background-color: #F5F5EB;
-    }
-
-blockquote
-    {
-    background: #CCCB9B;
+    background: #F5F5EB;
     }
 
 blockquote p
     {
     background: #F5F5EB;
-    margin-left: 10px;
     padding: 20px;
     font-style: italic;
+    border-left: 10px solid #CCCB9B;
     }
 
 em,q,em,dfn
@@ -220,8 +235,16 @@ a:active, a:hover
 
 table
     {
-    border: 1px solid #E5E4CE;
+    border: 1px solid #CCCB9B;
     border-collapse: collapse;
+    max-width: 400px;
+    }
+
+thead td
+    {
+    background: #7F7927;
+    color: #fff;
+    font-weight: 600;
     }
 
 tr
@@ -374,6 +397,16 @@ img
 <section id=content>
   <ul class=posts_listing>
     
+      <li><a class="noDecoration" href="/post/simple-showhide-with-js-css/"><h2>Simple Show/Hide with JS &amp; CSS</h2></a>
+        <div id=date>
+          <time>March 2014</time>
+        </div>
+        <div id=summary>
+            I am frequently asked by front end developers what the best technique is for showing and hiding a div within a web page. While this can be accomplished many ways, I will outline the technique that I use most often. It involves adding and removing a class from the DOM node you are looking to show or hide. The code shown can be used as a starting point, and can be enhanced once you understand the basics.
+            <p><a href="/post/simple-showhide-with-js-css/">Read the Full Post</a></p>
+        </div>
+      </li>
+    
       <li><a class="noDecoration" href="/post/the-5-types-of-front-end-developers/"><h2>The 5 Types of Front-End Developers</h2></a>
         <div id=date>
           <time>July 2012</time>
@@ -416,28 +449,20 @@ This notion really started to gain traction, or at least publicity, in the mid-9
         </div>
       </li>
     
-      <li><a class="noDecoration" href="/post/html5-is-it-ready-for-prime-time/"><h2>HTML5: Is it Ready for Prime Time?</h2></a>
-        <div id=date>
-          <time>May 2010</time>
-        </div>
-        <div id=summary>
-            The recent announcement by Apple that it has sold over one million iPads in just 28 days has developers chomping at the bit to create apps for the iPhone OS. However, for many of these App Store success story hopefuls, there are at least two problems that they face before writing even a single line of code.
-If one would like to develop a native app for the iPhone OS, they must either take a time machine back to 1988 and learn the nasty, archaic language known as Objective-C, or they must take a leap of faith and hope that Apple’s recent Developer Agreement changes don’t apply to Adobe and other vendors offering tools that translate various languages into native iPhone code.
-            <p><a href="/post/html5-is-it-ready-for-prime-time/">Read the Full Post</a></p>
-        </div>
-      </li>
-    
   </ul>
 </section>
 
 <div class=paginationWrapper>
     <ul>
     
+        <li><a href="/page/3/">&larr; Older Posts</a></li>
+    
     
         <li><a href="/">Newer Posts &rarr;</a></li>
     
     </ul>
 </div>
+    <hr class="footer">
     <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
   </div>
 </body>

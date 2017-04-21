@@ -19,10 +19,10 @@
     <title>
       
       
-         Hugo and AWS for Dummies 
+         Top 10 Programming Languages: April 2017 
       
     </title>
-    <link rel="canonical" href="/post/hugo-and-aws-for-dummies/">
+    <link rel="canonical" href="/post/top-10-programming-languages-april-2017/">
 
     <style>
 
@@ -98,6 +98,26 @@ hr.footer
     padding: 10px 0;
     }
 
+.comment, .reply
+    {
+    padding: 10px;
+    border: 1px solid #CCCB9B;
+    border-radius: 3px;
+    background: #F5F5EB;
+    }
+
+.reply
+    {
+    margin: 0 0 20px 40px;
+    }
+
+.replyLabel
+    {
+    margin: 10px 0 10px 40px;
+    font-weight: 600;
+    font-style: italic;
+    }
+
 #wrapper
     {
     width: 700px;
@@ -158,7 +178,7 @@ pre
     border-radius: 3px;
     margin: 0;
     padding: 10px;
-    background-color: #1D1F20;
+    background: #1D1F20;
     }
 
 pre .language-wrap
@@ -171,20 +191,15 @@ code.inline
     padding: 1px 5px;
     border: 1px solid #CCCB9B;
     border-radius: 3px;
-    background-color: #F5F5EB;
-    }
-
-blockquote
-    {
-    background: #CCCB9B;
+    background: #F5F5EB;
     }
 
 blockquote p
     {
     background: #F5F5EB;
-    margin-left: 10px;
     padding: 20px;
     font-style: italic;
+    border-left: 10px solid #CCCB9B;
     }
 
 em,q,em,dfn
@@ -219,8 +234,16 @@ a:active, a:hover
 
 table
     {
-    border: 1px solid #E5E4CE;
+    border: 1px solid #CCCB9B;
     border-collapse: collapse;
+    max-width: 400px;
+    }
+
+thead td
+    {
+    background: #7F7927;
+    color: #fff;
+    font-weight: 600;
     }
 
 tr
@@ -369,50 +392,64 @@ img
 
 
 <section id=content>
-  <h1> Hugo and AWS for Dummies </h1>
+  <h1> Top 10 Programming Languages: April 2017 </h1>
 
   <div id=sub-header>
-    April 2017 · 1 minute read
+    April 2017 · 3 minute read
   </div>
 
   <div class=entry-content>
     
 
-<p>I guess I must be a dummy.  In my quest to move this website from Media Temple to AWS, I searched the Internet for relevant examples and tutorials.  While there was excellent information to be found, most of the articles were either outdated, overly complex, or a combination of the two.</p>
+<p><img src="/languages.png" alt="Languages Logo" /> The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017.  RSIPL was created after reading several similar articles and lists.  The ranking methodology that most other lists use is based upon the popularity of the languages on Github (measuring &ldquo;code&rdquo;), and on StackOverflow (measuring &ldquo;discussion&rdquo;).  As good as these lists are, I feel that they are perhaps less timely than they could be, and that they are missing a third critical piece of the puzzle: job postings.</p>
 
-<p>Following is my personal workflow for setting up a Hugo website, deploying it to AWS, and configuring it all using a custom domain.</p>
+<h2 id="10-most-popular-programming-languages">10 Most Popular Programming Languages</h2>
 
-<h2 id="step-1-configuring-hugo">Step 1: Configuring Hugo</h2>
+<p>Following are the top 10 languages in April 2017, using the RSIPL formula:</p>
 
-<p>using S3, CloudFront, and Route53.</p>
+<p><center class="moreSpace">
+    <table>
+        <thead><td>Rank</td><td>Language</td><td style="text-align:right">RSIPL</td></thead>
+        <tr><td>1.</td><td>JavaScript</td><td style="text-align:right">82.0</td></tr>
+        <tr><td>2.</td><td>Java</td><td style="text-align:right">73.3</td></tr>
+        <tr><td>3.</td><td>Python</td><td style="text-align:right">55.2</td></tr>
+        <tr><td>4.</td><td>PHP</td><td style="text-align:right">34.9</td></tr>
+        <tr><td>5.</td><td>C#</td><td style="text-align:right">34.6</td></tr>
+        <tr><td>6.</td><td>SQL</td><td style="text-align:right">34.4</td></tr>
+        <tr><td>7.</td><td>C++</td><td style="text-align:right">25.0</td></tr>
+        <tr><td>8.</td><td>C</td><td style="text-align:right">16.9</td></tr>
+        <tr><td>9.</td><td>Swift</td><td style="text-align:right">12.9</td></tr>
+        <tr><td>10.</td><td>Objective-C</td><td style="text-align:right">12.6</td></tr>
+    </table>
+</center></p>
 
-<h2 id="step-2-configuring-aws">Step 2: Configuring AWS</h2>
+<p>This list deviates a fair amount from the <a href="/post/top-10-programming-languages-march-2017">prior list</a>, published one month ago.  This is for two reasons.  First, I have further refined the algorithm for computing scores.  And second, SQL has been added as a language.  Adding SQL greatly effects scoring because RSIPL sub-scores are relative to each other, and SQL does very well with the Job Posting component.</p>
 
-<p>Set up a Bucket Policy.  I used the example policy from Amazon:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span><span style="color: #d0d0d0">{</span>
-<span style="color: #6ab825; font-weight: bold">&quot;Version&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;2012-10-17&quot;</span><span style="color: #d0d0d0">,</span>
-<span style="color: #6ab825; font-weight: bold">&quot;Statement&quot;</span><span style="color: #d0d0d0">:</span>
-    <span style="color: #d0d0d0">[{</span>
-    <span style="color: #6ab825; font-weight: bold">&quot;Sid&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;PublicReadGetObject&quot;</span><span style="color: #d0d0d0">,</span>
-    <span style="color: #6ab825; font-weight: bold">&quot;Effect&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;Allow&quot;</span><span style="color: #d0d0d0">,</span>
-    <span style="color: #6ab825; font-weight: bold">&quot;Principal&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;*&quot;</span><span style="color: #d0d0d0">,</span>
-    <span style="color: #6ab825; font-weight: bold">&quot;Action&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">[</span><span style="color: #ed9d13">&quot;s3:GetObject&quot;</span><span style="color: #d0d0d0">],</span>
-    <span style="color: #6ab825; font-weight: bold">&quot;Resource&quot;</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">[</span><span style="color: #ed9d13">&quot;arn:aws:s3:::example-bucket/*&quot;</span><span style="color: #d0d0d0">]</span>
-    <span style="color: #d0d0d0">}]</span>
-<span style="color: #d0d0d0">}</span>
-</pre></div>
+<h2 id="rsipl-criteria">RSIPL Criteria</h2>
 
-<p>Replace &ldquo;example-bucket&rdquo; with your bucket name, which should be the same as your domain name, which in my case is elemdage.com.</p>
+<p>I am sure there are many who look at these lists and wonder what the potential is for landing a job if they invest their time and effort into learning one or more of these languages.  Because of this, I felt it important to reflect this in the score. By using job postings as a criteria, the list reflects what I feel is a pragmatic view into the popularity of languages.</p>
 
-<h2 id="step-3-configuring-nameservers">Step 3: Configuring Nameservers</h2>
+<p>Another important note regarding RSIPL: the rating attempts to reflect popularity based on <em>current activities</em>, rather than cumulative popularity over the years.  To achieve this, I looked at recent Stack Overflow tags, recent GitHub activity, and recent job postings from both Indeed and Dice.  The job postings were blended together to form one aspect of the score.</p>
+
+<p>So, to summarize, this ranking is intended to reflect very recent activity from the perspective of Open Source code activity, tagged discussions, and job postings.  Each criteria was normalized on a scale of 0-100.  Results were then averaged for each language.</p>
+
+<p>While I feel RSIPL does a better job at capturing current popularity of programming languages than other lists, it is far from perfect.  Although job postings do add a meaningful aspect to the analysis, it is somewhat flawed, because job postings tend to lag behind the latest and greatest trends, as industry is typically slow to respond to change.  In addition, there will always be jobs related to corporate legacy systems that will also skew such ratings.  But to counter that argument, even though there are jobs available for legacy technology, they are still jobs nonetheless, and they still do reflect on the popularity of a given language (so COBOL programmers take heart!).</p>
+
+<p>I intend on posting RISPL ratings over time, perhaps monthly.  I also intend to revise the index as better data becomes available.  Hopefully it is helpful to some in its current form.</p>
+
+<hr />
+
+<h3 id="reader-comments"><strong>Reader Comments</strong></h3>
+
+<p>none yet.</p>
 
   </div>
 
 </section>
 
 <center class="moreSpace"><a class="email" href="mailto:blog@elemdage.com" title="email Gene Loparco">Comment on this post</a></center>
-<hr class="footer">
 
+    <hr class="footer">
     <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
   </div>
 </body>

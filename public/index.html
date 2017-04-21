@@ -99,6 +99,26 @@ hr.footer
     padding: 10px 0;
     }
 
+.comment, .reply
+    {
+    padding: 10px;
+    border: 1px solid #CCCB9B;
+    border-radius: 3px;
+    background: #F5F5EB;
+    }
+
+.reply
+    {
+    margin: 0 0 20px 40px;
+    }
+
+.replyLabel
+    {
+    margin: 10px 0 10px 40px;
+    font-weight: 600;
+    font-style: italic;
+    }
+
 #wrapper
     {
     width: 700px;
@@ -159,7 +179,7 @@ pre
     border-radius: 3px;
     margin: 0;
     padding: 10px;
-    background-color: #1D1F20;
+    background: #1D1F20;
     }
 
 pre .language-wrap
@@ -172,20 +192,15 @@ code.inline
     padding: 1px 5px;
     border: 1px solid #CCCB9B;
     border-radius: 3px;
-    background-color: #F5F5EB;
-    }
-
-blockquote
-    {
-    background: #CCCB9B;
+    background: #F5F5EB;
     }
 
 blockquote p
     {
     background: #F5F5EB;
-    margin-left: 10px;
     padding: 20px;
     font-style: italic;
+    border-left: 10px solid #CCCB9B;
     }
 
 em,q,em,dfn
@@ -220,8 +235,16 @@ a:active, a:hover
 
 table
     {
-    border: 1px solid #E5E4CE;
+    border: 1px solid #CCCB9B;
     border-collapse: collapse;
+    max-width: 400px;
+    }
+
+thead td
+    {
+    background: #7F7927;
+    color: #fff;
+    font-weight: 600;
     }
 
 tr
@@ -374,25 +397,34 @@ img
 <section id=content>
   <ul class=posts_listing>
     
-      <li><a class="noDecoration" href="/post/hugo-and-aws-for-dummies/"><h2>Hugo and AWS for Dummies</h2></a>
+      <li><a class="noDecoration" href="/post/top-20-javascript-technologies-april-2017/"><h2>Top 20 JavaScript Technologies: April 2017</h2></a>
         <div id=date>
           <time>April 2017</time>
         </div>
         <div id=summary>
-            I guess I must be a dummy. In my quest to move this website from Media Temple to AWS, I searched the Internet for relevant examples and tutorials. While there was excellent information to be found, most of the articles were either outdated, overly complex, or a combination of the two.
-Following is my personal workflow for setting up a Hugo website, deploying it to AWS, and configuring it all using a custom domain.
-            <p><a href="/post/hugo-and-aws-for-dummies/">Read the Full Post</a></p>
+            The title of this post is a bit misleading, as this analysis includes CSS libraries, such as bootstrap, LESS, and SASS. I was going to call it “Top 20 Full Stack Technologies” but full stack generally includes technologies such as PHP and .Net. This list only includes HTML/JS/CSS, but it includes those technologies on both the client and server side. To that end, the rating system is called Relative Strength Index of JavaScript Technologies (RSIJT).
+            <p><a href="/post/top-20-javascript-technologies-april-2017/">Read the Full Post</a></p>
         </div>
       </li>
     
-      <li><a class="noDecoration" href="/post/top-20-javascript-technologies/"><h2>Top 20 JavaScript Technologies: March 2017</h2></a>
+      <li><a class="noDecoration" href="/post/top-10-programming-languages-april-2017/"><h2>Top 10 Programming Languages: April 2017</h2></a>
+        <div id=date>
+          <time>April 2017</time>
+        </div>
+        <div id=summary>
+            The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017. RSIPL was created after reading several similar articles and lists. The ranking methodology that most other lists use is based upon the popularity of the languages on Github (measuring &ldquo;code&rdquo;), and on StackOverflow (measuring &ldquo;discussion&rdquo;). As good as these lists are, I feel that they are perhaps less timely than they could be, and that they are missing a third critical piece of the puzzle: job postings.
+            <p><a href="/post/top-10-programming-languages-april-2017/">Read the Full Post</a></p>
+        </div>
+      </li>
+    
+      <li><a class="noDecoration" href="/post/top-20-javascript-technologies-march-2017/"><h2>Top 20 JavaScript Technologies: March 2017</h2></a>
         <div id=date>
           <time>March 2017</time>
         </div>
         <div id=summary>
             As a follow-up to my previous post, Top 10 Programming Languages, I thought it would be interesting to look at specific technologies in the JavaScript world.
 What&rsquo;s in a Name? The title of this post is a bit misleading, as this analysis includes CSS libraries, such as bootstrap, LESS, and SASS. I was going to call it “Top 20 Full Stack Technologies” but full stack generally includes technologies such as PHP and .
-            <p><a href="/post/top-20-javascript-technologies/">Read the Full Post</a></p>
+            <p><a href="/post/top-20-javascript-technologies-march-2017/">Read the Full Post</a></p>
         </div>
       </li>
     
@@ -403,16 +435,6 @@ What&rsquo;s in a Name? The title of this post is a bit misleading, as this anal
         <div id=summary>
             The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017. RSIPL was created after reading several similar articles and lists, most notably, the RedMonk Programming Languages Rankings. The ranking methodology RedMonk uses is based upon popularity of the languages on Github (measuring &ldquo;code&rdquo;, as they put it) and StackOverflow (measuring &ldquo;discussion&rdquo;). As good as this list is, I feel that it is perhaps less timely than it could be, and that it is missing a third critical piece of the puzzle: job postings.
             <p><a href="/post/top-10-programming-languages-march-2017/">Read the Full Post</a></p>
-        </div>
-      </li>
-    
-      <li><a class="noDecoration" href="/post/simple-showhide-with-js-css/"><h2>Simple Show/Hide with JS &amp; CSS</h2></a>
-        <div id=date>
-          <time>March 2014</time>
-        </div>
-        <div id=summary>
-            I am frequently asked by front end developers what the best technique is for showing and hiding a div within a web page. While this can be accomplished many ways, I will outline the technique that I use most often. It involves adding and removing a class from the DOM node you are looking to show or hide. The code shown can be used as a starting point, and can be enhanced once you understand the basics.
-            <p><a href="/post/simple-showhide-with-js-css/">Read the Full Post</a></p>
         </div>
       </li>
     
@@ -427,6 +449,7 @@ What&rsquo;s in a Name? The title of this post is a bit misleading, as this anal
     
     </ul>
 </div>
+    <hr class="footer">
     <center class="moreSpace"><a class="signature" href="/gloparco" title="by Gene Loparco">by Gene Loparco</a></center>
   </div>
 </body>

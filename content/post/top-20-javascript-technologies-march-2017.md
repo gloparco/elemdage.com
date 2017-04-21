@@ -27,7 +27,8 @@ The technologies included in this analysis include:
 Following are the top 10 JS technologies in March 2017, using the RSIJT formula:
 
 <center class="moreSpace">
-    <table style="width: 50%">
+    <table>
+        <thead><td>Rank</td><td>Technology</td><td style="text-align:right">RSIJT</td></thead>
         <tr><td>1.</td><td>AngularJS</td><td style="text-align:right">79.3</td></tr>
         <tr><td>2.</td><td>jQuery</td><td style="text-align:right">61.2</td></tr>
         <tr><td>3.</td><td>Node.js</td><td style="text-align:right">55.1</td></tr>
@@ -52,17 +53,18 @@ Node.js and Express continue to be very popular technologies on the server side.
 As a bonus, I have decided to include the next 10 technologies with their RSIJT score.
 
 <center class="moreSpace">
-    <table style="width: 50%">
-    <tr><td>1.</td><td>Ember.js</td><td style="text-align:right">4.6</td></tr>
-    <tr><td>2.</td><td>D3.js</td><td style="text-align:right">4.0</td></tr>
-    <tr><td>3.</td><td>Sass</td><td style="text-align:right">3.9</td></tr>
-    <tr><td>4.</td><td>Redux</td><td style="text-align:right">3.7</td></tr>
-    <tr><td>5.</td><td>ES6</td><td style="text-align:right">3.4</td></tr>
-    <tr><td>6.</td><td>Vue.js</td><td style="text-align:right">2.8</td></tr>
-    <tr><td>7.</td><td>gulp.js</td><td style="text-align:right">2.5</td></tr>
-    <tr><td>8.</td><td>Less.js</td><td style="text-align:right">2.4</td></tr>
-    <tr><td>9.</td><td>Jasmine</td><td style="text-align:right">2.1</td></tr>
-    <tr><td>10.</td><td>Grunt</td><td style="text-align:right">2.0</td></tr>
+    <table>
+    <thead><td>Rank</td><td>Technology</td><td style="text-align:right">RSIJT</td></thead>
+    <tr><td>11.</td><td>Ember.js</td><td style="text-align:right">4.6</td></tr>
+    <tr><td>12.</td><td>D3.js</td><td style="text-align:right">4.0</td></tr>
+    <tr><td>13.</td><td>Sass</td><td style="text-align:right">3.9</td></tr>
+    <tr><td>14.</td><td>Redux</td><td style="text-align:right">3.7</td></tr>
+    <tr><td>15.</td><td>ES6</td><td style="text-align:right">3.4</td></tr>
+    <tr><td>16.</td><td>Vue.js</td><td style="text-align:right">2.8</td></tr>
+    <tr><td>17.</td><td>gulp.js</td><td style="text-align:right">2.5</td></tr>
+    <tr><td>18.</td><td>Less.js</td><td style="text-align:right">2.4</td></tr>
+    <tr><td>19.</td><td>Jasmine</td><td style="text-align:right">2.1</td></tr>
+    <tr><td>20.</td><td>Grunt</td><td style="text-align:right">2.0</td></tr>
     </table>
 </center>
 

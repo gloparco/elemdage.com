@@ -6,27 +6,35 @@
     <description>Recent content on Elemdage: Blog by Gene Loparco</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Apr 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hugo and AWS for Dummies</title>
-      <link>/post/hugo-and-aws-for-dummies/</link>
-      <pubDate>Mon, 17 Apr 2017 00:00:00 +0000</pubDate>
+      <title>Top 20 JavaScript Technologies: April 2017</title>
+      <link>/post/top-20-javascript-technologies-april-2017/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/hugo-and-aws-for-dummies/</guid>
-      <description>I guess I must be a dummy. In my quest to move this website from Media Temple to AWS, I searched the Internet for relevant examples and tutorials. While there was excellent information to be found, most of the articles were either outdated, overly complex, or a combination of the two.
-Following is my personal workflow for setting up a Hugo website, deploying it to AWS, and configuring it all using a custom domain.</description>
+      <guid>/post/top-20-javascript-technologies-april-2017/</guid>
+      <description>The title of this post is a bit misleading, as this analysis includes CSS libraries, such as bootstrap, LESS, and SASS. I was going to call it “Top 20 Full Stack Technologies” but full stack generally includes technologies such as PHP and .Net. This list only includes HTML/JS/CSS, but it includes those technologies on both the client and server side. To that end, the rating system is called Relative Strength Index of JavaScript Technologies (RSIJT).</description>
+    </item>
+    
+    <item>
+      <title>Top 10 Programming Languages: April 2017</title>
+      <link>/post/top-10-programming-languages-april-2017/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/top-10-programming-languages-april-2017/</guid>
+      <description>The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017. RSIPL was created after reading several similar articles and lists. The ranking methodology that most other lists use is based upon the popularity of the languages on Github (measuring &amp;ldquo;code&amp;rdquo;), and on StackOverflow (measuring &amp;ldquo;discussion&amp;rdquo;). As good as these lists are, I feel that they are perhaps less timely than they could be, and that they are missing a third critical piece of the puzzle: job postings.</description>
     </item>
     
     <item>
       <title>Top 20 JavaScript Technologies: March 2017</title>
-      <link>/post/top-20-javascript-technologies/</link>
+      <link>/post/top-20-javascript-technologies-march-2017/</link>
       <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/top-20-javascript-technologies/</guid>
+      <guid>/post/top-20-javascript-technologies-march-2017/</guid>
       <description>As a follow-up to my previous post, Top 10 Programming Languages, I thought it would be interesting to look at specific technologies in the JavaScript world.
 What&amp;rsquo;s in a Name? The title of this post is a bit misleading, as this analysis includes CSS libraries, such as bootstrap, LESS, and SASS. I was going to call it “Top 20 Full Stack Technologies” but full stack generally includes technologies such as PHP and .</description>
     </item>

@@ -4,7 +4,7 @@ description = "Relative Strength Index for Programming Languages (RSIPL)"
 date        = "2017-03-01"
 +++
 
-![Languages Logo](/languages.jpg) The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017.  RSIPL was created after reading several similar articles and lists, most notably, the [RedMonk Programming Languages Rankings](http://redmonk.com/sogrady/2017/03/17/language-rankings-1-17/ "Red Monk Language Rankings").  The ranking methodology RedMonk uses is based upon popularity of the languages on Github (measuring "code", as they put it) and StackOverflow (measuring "discussion").  As good as this list is, I feel that it is perhaps less timely than it could be, and that it is missing a third critical piece of the puzzle: job postings.
+![Languages Logo](/languages.png) The Relative Strength Index for Programming Languages (RSIPL) is a metric I devised and first published starting in March 2017.  RSIPL was created after reading several similar articles and lists, most notably, the [RedMonk Programming Languages Rankings](http://redmonk.com/sogrady/2017/03/17/language-rankings-1-17/ "Red Monk Language Rankings").  The ranking methodology RedMonk uses is based upon popularity of the languages on Github (measuring "code", as they put it) and StackOverflow (measuring "discussion").  As good as this list is, I feel that it is perhaps less timely than it could be, and that it is missing a third critical piece of the puzzle: job postings.
 
 ## RSIPL Criteria
 
@@ -19,7 +19,8 @@ So, to summarize, this ranking is intended to reflect very recent activity from 
 Following are the top 10 languages in March 2017, using the RSIPL formula:
 
 <center class="moreSpace">
-    <table style="width: 50%">
+    <table>
+        <thead><td>Rank</td><td>Language</td><td style="text-align:right">RSIPL</td></thead>
         <tr><td>1.</td><td>JavaScript</td><td style="text-align:right">89.2</td></tr>
         <tr><td>2.</td><td>Java</td><td style="text-align:right">86.2</td></tr>
         <tr><td>3.</td><td>Python</td><td style="text-align:right">48.4</td></tr>

@@ -6,7 +6,7 @@ date        = "2012-01-19"
 
 We are now squarely in the age of HTML5; or the age of HTML5, JavaScript, and CSS3, if you prefer. That being the case, it amazes me that for those poor souls who are new to the world of front-end development, there is little written on what their developer workflow might look like. With them in mind, I am offering up a starting point, based on my own experience and preferences.
 
-<img title="HTML5 Workflow" src="/html5workflow.png" width="614" height="461" />
+<img title="HTML5 Workflow" src="/html5workflow.png" width="600" height="450" />
 
 ## Hardware/OS
 
@@ -68,7 +68,7 @@ I need to give Will some props here. The guy is a very responsive, available dev
 
 [My own theme](http://blog.elemdage.com/wp-content/uploads/2012/01/Theme-Gene.zip): although I like a lot of the visual themes that are out there already, most of them tend to be light text on a dark background. If I’m coding for quite a while, I tend to prefer dark text on a light background. None of the themes really struck my fancy, so I went ahead and created my own. Here is a screenshot of an HTML5 page:
 
-<img title="Sublime ScreenShot" src="/SublimeScreenShot.png" width="640" height="393"/>
+<img title="Sublime ScreenShot" src="/SublimeScreenShot.png" width="640" height="394"/>
 
 If anyone is interested in my theme, feel free to download it, here: [Theme – Gene](http://blog.elemdage.com/wp-content/uploads/2012/01/Theme-Gene.zip)
 
